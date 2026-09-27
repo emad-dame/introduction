@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>عماد | قرارداد، کسب‌وکار و تکنولوژی</title>
+
+  <meta
+    name="description"
+    content="وب‌سایت شخصی عماد؛ متخصص قرارداد و عملیات تجاری با تجربه در تکنولوژی، فین‌تک، SaaS و توسعه کسب‌وکار."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --bg-soft: #111827;
+      --card: rgba(255,255,255,0.055);
+      --card-hover: rgba(255,255,255,0.08);
+      --text: #f5f7fb;
+      --muted: #aab3c2;
+      --accent: #64e6c5;
+      --accent-2: #6ea8fe;
+      --border: rgba(255,255,255,0.09);
+      --max-width: 1120px;
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Vazirmatn", sans-serif;
+      background:
+        radial-gradient(circle at 80% 10%, rgba(100,230,197,0.10), transparent 28%),
+        radial-gradient(circle at 10% 30%, rgba(110,168,254,0.08), transparent 30%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.9;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: auto;
+    }
+
+    /* Navigation */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(16px);
+      background: rgba(11,15,25,0.72);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .nav-links a {
+      transition: color .2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    /* Hero */
+
+    .hero {
+      min-height: calc(100vh - 72px);
+      display: flex;
+      align-items: center;
+      padding: 80px 0;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.3fr .7fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent);
+      background: rgba(100,230,197,0.08);
+      border: 1px solid rgba(100,230,197,0.18);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: .85rem;
+      margin-bottom: 22px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      background: var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 0 12px var(--accent);
+    }
+
+    h1 {
+      font-size: clamp(3.2rem, 8vw, 6.5rem);
+      line-height: 1;
+      letter-spacing: -3px;
+      margin-bottom: 24px;
+    }
+
+    .hero h2 {
+      font-size: clamp(1.4rem, 3vw, 2.2rem);
+      line-height: 1.5;
+      font-weight: 600;
+      max-width: 720px;
+      margin-bottom: 22px;
+    }
+
+    .hero-description {
+      color: var(--muted);
+      max-width: 700px;
+      font-size: 1.05rem;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      margin-top: 34px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 22px;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: transform .2s ease, background .2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #07100e;
+    }
+
+    .btn-secondary {
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: rgba(255,255,255,.03);
+    }
+
+    /* Profile image */
+
+    .profile-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .profile {
+      width: min(330px, 75vw);
+      aspect-ratio: 1;
+      border-radius: 30px;
+      border: 1px solid var(--border);
+      background:
+        linear-gradient(145deg, rgba(100,230,197,.08), rgba(110,168,254,.04)),
+        #121826;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 30px 80px rgba(0,0,0,.35);
+    }
+
+    /*
+      برای قرار دادن عکس:
+      1. عکس را با نام profile.jpg داخل همین پوشه قرار بده.
+      2. خط زیر را از حالت کامنت خارج کن:
+
+      background-image: url("profile.jpg");
+
+      3. بخش .profile-placeholder را حذف یا مخفی کن.
+    */
+
+    .profile-placeholder {
+      text-align: center;
+      color: var(--muted);
+      padding: 30px;
+    }
+
+    .profile-placeholder .icon {
+      font-size: 4rem;
+      margin-bottom: 10px;
+      opacity: .8;
+    }
+
+    .profile-placeholder strong {
+      display: block;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    /* Sections */
+
+    section {
+      padding: 100px 0;
+    }
+
+    .section-header {
+      max-width: 700px;
+      margin-bottom: 45px;
+    }
+
+    .section-label {
+      color: var(--accent);
+      font-size: .85rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: .5px;
+    }
+
+    h3 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.3;
+      margin-bottom: 15px;
+    }
+
+    .section-header p {
+      color: var(--muted);
+    }
+
+    /* About */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .about-card {
+      padding: 30px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: var(--radius);
+    }
+
+    .about-card p {
+      color: var(--muted);
+    }
+
+    .journey {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .journey span {
+      padding: 8px 13px;
+      border-radius: 10px;
+      background: rgba(100,230,197,.07);
+      border: 1px solid rgba(100,230,197,.13);
+      color: #d9fff5;
+      font-size: .85rem;
+    }
+
+    /* Skills */
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .skill {
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--card);
+      transition: transform .25s ease, background .25s ease;
+    }
+
+    .skill:hover {
+      transform: translateY(-5px);
+      background: var(--card-hover);
+    }
+
+    .skill-number {
+      color: var(--accent);
+      font-size: .8rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .skill h4 {
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+    }
+
+    .skill p {
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    /* Timeline */
+
+    .timeline {
+      border-right: 2px solid rgba(100,230,197,.25);
+      padding-right: 28px;
+      display: grid;
+      gap: 28px;
+    }
+
+    .timeline-item {
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      right: -37px;
+      top: 8px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 5px rgba(100,230,197,.08);
+    }
+
+    .timeline-item h4 {
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+
+    .timeline-item p {
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 60px;
+      border-radius: 30px;
+      border: 1px solid rgba(100,230,197,.18);
+      background:
+        radial-gradient(circle at 20% 20%, rgba(100,230,197,.10), transparent 35%),
+        rgba(255,255,255,.035);
+      text-align: center;
+    }
+
+    .cta h3 {
+      max-width: 800px;
+      margin: 0 auto 18px;
+    }
+
+    .cta p {
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .question {
+      margin: 30px auto;
+      padding: 22px;
+      max-width: 850px;
+      border-right: 3px solid var(--accent);
+      background: rgba(255,255,255,.04);
+      border-radius: 12px;
+      font-size: 1.05rem;
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 35px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: .85rem;
+      text-align: center;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 850px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-description {
+        margin: auto;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+
+      .profile-wrapper {
+        order: -1;
+      }
+
+      .profile {
+        width: 240px;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media (max-width: 550px) {
+      section {
+        padding: 70px 0;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta {
+        padding: 35px 22px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="#" class="logo">عماد</a>
+
+      <ul class="nav-links">
+        <li><a href="#about">درباره من</a></li>
+        <li><a href="#skills">مهارت‌ها</a></li>
+        <li><a href="#journey">مسیر حرفه‌ای</a></li>
+        <li><a href="#contact">ارتباط</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <main>
+
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div>
+          <span class="eyebrow">Contract • Business • Technology</span>
+
+          <h1>عماد</h1>
+
+          <h2>
+            قرارداد، کسب‌وکار و تکنولوژی؛
+            در نقطه‌ای که این سه به هم می‌رسند.
+          </h2>
+
+          <p class="hero-description">
+            متخصص قرارداد و عملیات تجاری با بیش از ۵ سال تجربه
+            در حوزه‌های تکنولوژی، فین‌تک و SaaS؛
+            با پیشینه‌ای در مهندسی، عملیات، توسعه کسب‌وکار و مدیریت پروژه.
+          </p>
+
+          <div class="buttons">
+            <a href="#contact" class="btn btn-primary">
+              با من در ارتباط باشید
+            </a>
+
+            <a href="#about" class="btn btn-secondary">
+              بیشتر درباره من
+            </a>
+          </div>
+        </div>
+
+        <!-- جای عکس -->
+        <div class="profile-wrapper">
+          <div class="profile">
+
+            <!--
+              بعداً می‌توانی این قسمت را با عکس خودت جایگزین کنی.
+              مثال:
+
+              <img src="profile.jpg" alt="عماد" class="profile-image">
+
+            -->
+
+            <div class="profile-placeholder">
+              <div class="icon">◈</div>
+              <strong>جای عکس</strong>
+              <span>تصویر پروفایل عماد</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-label">01 — درباره من</div>
+
+          <h3>
+            از مهندسی و عملیات تا قرارداد و کسب‌وکار
+          </h3>
+
+          <p>
+            مسیر حرفه‌ای من از مهندسی برق و مخابرات و فعالیت در
+            محیط‌های عملیاتی بین‌المللی شروع شد و به حوزه‌های
+            تکنولوژی، خدمات دیجیتال، توسعه کسب‌وکار و مدیریت
+            قراردادهای تجاری رسید.
+          </p>
+        </div>
+
+        <div class="about-grid">
+
+          <div class="about-card">
+            <p>
+              در طول این مسیر با تیم‌های فنی، مالی، فروش، حقوقی
+              و مدیریتی همکاری کرده‌ام و معمولاً در نقطه‌ای قرار
+              داشته‌ام که لازم بوده بین نیازهای مختلف، یک مسیر
+              عملی و قابل اجرا پیدا شود.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <p>
+              به موضوعاتی علاقه‌مندم که در مرز میان کسب‌وکار،
+              تکنولوژی، قرارداد و مدیریت ریسک قرار دارند؛
+              جایی که درک هم‌زمان مسائل فنی و تجاری می‌تواند
+              به تصمیم‌های بهتر منجر شود.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="journey">
+          <span>مهندسی</span>
+          <span>عملیات بین‌المللی</span>
+          <span>توسعه کسب‌وکار</span>
+          <span>خدمات دیجیتال</span>
+          <span>تکنولوژی</span>
+          <span>قراردادهای تجاری</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-label">02 — چه کاری انجام می‌دهم؟</div>
+
+          <h3>
+            مهارت‌هایی برای حل مسائل بین کسب‌وکار و تکنولوژی
+          </h3>
+        </div>
+
+        <div class="skills-grid">
+
+          <article class="skill">
+            <div class="skill-number">01</div>
+            <h4>قرارداد و مذاکره</h4>
+            <p>
+              تهیه، بررسی و مذاکره قراردادهای تجاری،
+              SLA، MSA و NDA و مدیریت چرخه قرارداد
+              از شروع تا اجرا.
+            </p>
+          </article>
+
+          <article class="skill">
+            <div class="skill-number">02</div>
+            <h4>مناقصه و RFP</h4>
+            <p>
+              مدیریت فرآیندهای مناقصه و درخواست پیشنهاد،
+              ارزیابی تأمین‌کنندگان و انتخاب شرکای مناسب
+              برای پروژه‌های تکنولوژی.
+            </p>
+          </article>
+
+          <article class="skill">
+            <div class="skill-number">03</div>
+            <h4>مدیریت ریسک و انطباق</h4>
+            <p>
+              شناسایی ریسک‌های قراردادی و عملیاتی و تبدیل
+              الزامات حقوقی و مقرراتی به اقدامات قابل اجرا.
+            </p>
+          </article>
+
+          <article class="skill">
+            <div class="skill-number">04</div>
+            <h4>توسعه کسب‌وکار</h4>
+            <p>
+              تحلیل بازار، بررسی رقبا، طراحی ارزش پیشنهادی
+              و همکاری با تیم‌های محصول و فنی برای توسعه
+              خدمات دیجیتال.
+            </p>
+          </article>
+
+          <article class="skill">
+            <div class="skill-number">05</div>
+            <h4>مدیریت پروژه</h4>
+            <p>
+              هماهنگ‌کردن تیم‌های مختلف از مرحله ایده و
+              نیازمندی تا اجرا و عرضه با استفاده از Agile
+              و اصول مدیریت پروژه.
+            </p>
+          </article>
+
+          <article class="skill">
+            <div class="skill-number">06</div>
+            <h4>نگاه فنی و عملیاتی</h4>
+            <p>
+              ترکیب پیشینه مهندسی و تجربه محیط‌های عملیاتی
+              برای ایجاد ارتباط مؤثر میان زبان فنی و
+              زبان کسب‌وکار.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Professional Journey -->
+    <section id="journey">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-label">03 — مسیر حرفه‌ای</div>
+
+          <h3>
+            تجربه در چند محیط متفاوت، با یک نقطه مشترک
+          </h3>
+
+          <p>
+            حل مسئله، مدیریت ریسک و ایجاد ارتباط بین افراد،
+            تیم‌ها و اهداف کسب‌وکار.
+          </p>
+        </div>
+
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <h4>مهندسی و عملیات فنی بین‌المللی</h4>
+            <p>
+              فعالیت در محیط‌های عملیاتی پیچیده و بین‌المللی،
+              نگهداری و عیب‌یابی سیستم‌های الکتریکی،
+              ارتباطی و ناوبری و همکاری با نهادهای نظارتی
+              و بازرسی.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h4>توسعه کسب‌وکار و خدمات دیجیتال</h4>
+            <p>
+              توسعه خدمات B2B و دیجیتال، ایجاد همکاری‌های
+              تجاری، تحلیل بازار و رقبا و تبدیل نیازهای
+              کسب‌وکار به الزامات قابل اجرا برای تیم‌های فنی.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h4>مدیریت قرارداد و عملیات تجاری</h4>
+            <p>
+              مدیریت چرخه قراردادهای تجاری، مذاکره، SLA و MSA،
+              مدیریت مناقصه و RFP، ارزیابی ریسک و همکاری
+              نزدیک با تیم‌های حقوقی، فنی، مالی و مدیریتی.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+
+        <div class="cta">
+
+          <div class="section-label">04 — ارتباط</div>
+
+          <h3>
+            تا حالا در صنایعی که مشغول به کار بوده‌اید
+            با شخصی مثل من آشنا شده‌اید؟
+          </h3>
+
+          <div class="question">
+            اگر پاسخ شما «نه» است، شاید وقت آن رسیده باشد
+            یک گفت‌وگوی متفاوت را شروع کنیم.
+          </div>
+
+          <p>
+            اگر فکر می‌کنید ترکیب تجربه فنی، تجاری، قراردادی
+            و عملیاتی می‌تواند برای شما یا کسب‌وکارتان مفید باشد،
+            برای مشاهده نمونه‌کار یا مشاوره می‌توانید با من
+            تماس بگیرید.
+          </p>
+
+          <div class="buttons" style="justify-content:center;">
+
+            <!-- ایمیل خودت را اینجا وارد کن -->
+            <a
+              href="mailto:YOUR_EMAIL@example.com"
+              class="btn btn-primary"
+            >
+              ایمیل به عماد
+            </a>
+
+            <!-- لینک LinkedIn خودت را اینجا وارد کن -->
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              LinkedIn
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div class="container">
+      © 2026 عماد — ساخته شده برای معرفی مسیر حرفه‌ای و همکاری
+    </div>
+  </footer>
+
+</body>
+</html>
