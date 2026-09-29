@@ -1,2299 +1,2064 @@
+```html
 <!DOCTYPE html>
-
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>عماد | راهبری و توسعه کسب‌وکار با حاکمیت حقوقی</title>
-
-<meta name="description" content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمیت حقوقی، از تدوین استراتژی و مدل‌سازی کسب‌وکار تا معماری خلق ارزش و اجرای ساختارهای تجاری.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-
-/* =========================================================
-   ROOT
-========================================================= */
-
-:root {
-  --bg: #050812;
-  --bg-2: #0a1020;
-
-  --text: #f7f9ff;
-  --muted: #a8b3c7;
-
-  --teal: #63e6c5;
-  --blue: #6ea8fe;
-  --purple: #a78bfa;
-  --pink: #ec8cff;
-
-  --glass: rgba(255,255,255,.055);
-  --glass-strong: rgba(255,255,255,.085);
-
-  --border: rgba(255,255,255,.10);
-
-  --max: 1160px;
-  --radius: 24px;
-}
-
-/* =========================================================
-   RESET
-========================================================= */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Vazirmatn", sans-serif;
-  background:
-    radial-gradient(
-      circle at 10% 10%,
-      rgba(99,230,197,.10),
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 90% 20%,
-      rgba(110,168,254,.10),
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 50% 90%,
-      rgba(167,139,250,.08),
-      transparent 30%
-    ),
-    var(--bg);
-
-  color: var(--text);
-  line-height: 1.9;
-  overflow-x: hidden;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-button,
-a {
-  -webkit-tap-highlight-color: transparent;
-}
-
-.container {
-  width: min(92%, var(--max));
-  margin: auto;
-}
-
-/* =========================================================
-   ANIMATED BACKGROUND
-========================================================= */
-
-.ambient {
-  position: fixed;
-  inset: 0;
-  z-index: -2;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.orb {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(70px);
-  opacity: .32;
-  animation: float 14s ease-in-out infinite;
-}
-
-.orb.one {
-  width: 380px;
-  height: 380px;
-  background: var(--teal);
-  top: -120px;
-  right: -100px;
-}
-
-.orb.two {
-  width: 320px;
-  height: 320px;
-  background: var(--blue);
-  left: -120px;
-  top: 35%;
-  animation-delay: -4s;
-}
-
-.orb.three {
-  width: 300px;
-  height: 300px;
-  background: var(--purple);
-  right: 25%;
-  bottom: -150px;
-  animation-delay: -8s;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translate3d(0,0,0) scale(1);
-  }
-
-  50% {
-    transform: translate3d(30px,-35px,0) scale(1.08);
-  }
-}
-
-/* subtle grid */
-
-.grid-bg {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-
-  background-image:
-    linear-gradient(
-      rgba(255,255,255,.025) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      90deg,
-      rgba(255,255,255,.025) 1px,
-      transparent 1px
-    );
-
-  background-size: 70px 70px;
-
-  mask-image: linear-gradient(
-    to bottom,
-    black,
-    transparent 85%
-  );
-}
-
-/* =========================================================
-   NAVIGATION
-========================================================= */
-
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-
-  background: rgba(5,8,18,.68);
-
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-
-  border-bottom: 1px solid rgba(255,255,255,.08);
-}
-
-.nav-inner {
-  height: 72px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>عماد | راهبری و توسعه کسب‌وکار</title>
+
+  <meta
+    name="description"
+    content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمیت حقوقی، استراتژی، مدل‌سازی کسب‌وکار و معماری خلق ارزش."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    /* =========================================================
+       ROOT
+    ========================================================= */
+
+    :root {
+      --bg: #050812;
+      --bg-2: #080d19;
+      --panel: rgba(255,255,255,.055);
+      --panel-strong: rgba(255,255,255,.085);
+
+      --text: #f5f8ff;
+      --muted: #9da8ba;
+
+      --teal: #62e6c4;
+      --blue: #6ea8ff;
+      --purple: #9b7cff;
+
+      --border: rgba(255,255,255,.10);
+
+      --max: 1180px;
+      --radius: 24px;
+    }
+
+    /* =========================================================
+       RESET
+    ========================================================= */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Vazirmatn", sans-serif;
+      background:
+        radial-gradient(
+          circle at 15% 10%,
+          rgba(98,230,196,.09),
+          transparent 25%
+        ),
+        radial-gradient(
+          circle at 85% 15%,
+          rgba(110,168,255,.10),
+          transparent 28%
+        ),
+        radial-gradient(
+          circle at 70% 80%,
+          rgba(155,124,255,.08),
+          transparent 25%
+        ),
+        var(--bg);
+
+      color: var(--text);
+      line-height: 1.9;
+
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+
+      pointer-events: none;
+
+      background:
+        linear-gradient(
+          115deg,
+          transparent 0%,
+          rgba(98,230,196,.025) 35%,
+          transparent 65%
+        );
+
+      animation: ambient 12s ease-in-out infinite alternate;
+
+      z-index: -1;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: auto;
+    }
+
+    /* =========================================================
+       AMBIENT ORBS
+    ========================================================= */
+
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(90px);
+      pointer-events: none;
+      opacity: .25;
+      z-index: -2;
+    }
+
+    .orb.one {
+      width: 350px;
+      height: 350px;
+      background: var(--teal);
+      top: 10%;
+      right: -150px;
+      animation: floatOne 12s ease-in-out infinite;
+    }
+
+    .orb.two {
+      width: 300px;
+      height: 300px;
+      background: var(--blue);
+      top: 50%;
+      left: -130px;
+      animation: floatTwo 15s ease-in-out infinite;
+    }
+
+    .orb.three {
+      width: 260px;
+      height: 260px;
+      background: var(--purple);
+      bottom: 5%;
+      right: 20%;
+      animation: floatThree 13s ease-in-out infinite;
+    }
+
+    @keyframes floatOne {
+      0%,100% { transform: translate(0,0); }
+      50% { transform: translate(-50px,40px); }
+    }
+
+    @keyframes floatTwo {
+      0%,100% { transform: translate(0,0); }
+      50% { transform: translate(40px,-50px); }
+    }
+
+    @keyframes floatThree {
+      0%,100% { transform: translate(0,0); }
+      50% { transform: translate(-30px,-40px); }
+    }
+
+    @keyframes ambient {
+      from {
+        transform: translateX(-2%);
+        opacity: .7;
+      }
+      to {
+        transform: translateX(2%);
+        opacity: 1;
+      }
+    }
+
+    /* =========================================================
+       NAV
+    ========================================================= */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      background: rgba(5,8,18,.72);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+
+    .nav-inner {
+      min-height: 74px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+
+      color: var(--text);
+
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-mark {
+      width: 34px;
+      height: 34px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 10px;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--teal),
+          var(--blue)
+        );
+
+      color: #06100d;
+
+      font-size: .85rem;
+      font-weight: 900;
+
+      box-shadow:
+        0 0 25px rgba(98,230,196,.18);
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 28px;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: .88rem;
+      transition: .25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    .nav-contact {
+      padding: 9px 16px;
+
+      border: 1px solid rgba(98,230,196,.25);
+      border-radius: 10px;
+
+      color: var(--teal);
+
+      font-size: .82rem;
+      font-weight: 700;
+
+      transition: .25s ease;
+    }
+
+    .nav-contact:hover {
+      background: rgba(98,230,196,.08);
+      transform: translateY(-2px);
+    }
+
+    /* =========================================================
+       HERO
+    ========================================================= */
 
-.logo {
-  font-size: 1.35rem;
-  font-weight: 800;
+    .hero {
+      min-height: calc(100vh - 74px);
+
+      display: flex;
+      align-items: center;
+
+      padding: 95px 0 80px;
+
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+
+      gap: 90px;
 
-  background:
-    linear-gradient(
-      90deg,
-      var(--teal),
-      var(--blue),
-      var(--purple)
-    );
+      align-items: center;
+    }
 
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.nav-links {
-  list-style: none;
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
 
-  display: flex;
-  gap: 28px;
+      padding: 7px 13px;
 
-  color: var(--muted);
+      border: 1px solid rgba(98,230,196,.18);
+      border-radius: 999px;
 
-  font-size: .88rem;
-}
+      background: rgba(98,230,196,.055);
 
-.nav-links a {
-  transition:
-    color .25s ease,
-    text-shadow .25s ease;
-}
+      color: var(--teal);
 
-.nav-links a:hover {
-  color: var(--teal);
+      font-size: .78rem;
+      font-weight: 600;
 
-  text-shadow:
-    0 0 20px rgba(99,230,197,.45);
-}
+      margin-bottom: 25px;
+    }
 
-/* =========================================================
-   HERO
-========================================================= */
+    .status-dot {
+      width: 7px;
+      height: 7px;
 
-.hero {
-  min-height: calc(100vh - 72px);
+      border-radius: 50%;
 
-  display: flex;
-  align-items: center;
+      background: var(--teal);
 
-  padding: 90px 0 100px;
-}
+      box-shadow: 0 0 14px var(--teal);
 
-.hero-grid {
-  display: grid;
+      animation: pulse 2s infinite;
+    }
 
-  grid-template-columns: 1.25fr .75fr;
+    @keyframes pulse {
+      0%,100% {
+        box-shadow: 0 0 5px var(--teal);
+      }
 
-  gap: 80px;
+      50% {
+        box-shadow:
+          0 0 18px var(--teal),
+          0 0 30px rgba(98,230,196,.3);
+      }
+    }
 
-  align-items: center;
-}
+    h1 {
+      font-size: clamp(4.5rem, 10vw, 8rem);
 
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
+      line-height: .85;
 
-  padding: 7px 14px;
+      letter-spacing: -6px;
 
-  border-radius: 999px;
+      margin-bottom: 30px;
 
-  background: rgba(99,230,197,.07);
+      background:
+        linear-gradient(
+          110deg,
+          #ffffff 20%,
+          #bdeee2 50%,
+          #8daeff 80%
+        );
 
-  border: 1px solid rgba(99,230,197,.20);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
 
-  color: var(--teal);
+    .hero-title {
+      font-size: clamp(1.55rem, 3vw, 2.45rem);
 
-  font-size: .78rem;
+      line-height: 1.55;
 
-  margin-bottom: 24px;
+      font-weight: 600;
 
-  box-shadow:
-    0 0 30px rgba(99,230,197,.06);
-}
+      max-width: 760px;
 
-.eyebrow::before {
-  content: "";
+      margin-bottom: 25px;
+    }
 
-  width: 7px;
-  height: 7px;
+    .hero-title strong {
+      background:
+        linear-gradient(
+          100deg,
+          var(--teal),
+          var(--blue)
+        );
 
-  border-radius: 50%;
+      -webkit-background-clip: text;
+      background-clip: text;
 
-  background: var(--teal);
+      color: transparent;
+    }
 
-  box-shadow:
-    0 0 15px var(--teal);
+    .hero-description {
+      max-width: 730px;
 
-  animation: pulse 2s infinite;
-}
+      color: var(--muted);
 
-@keyframes pulse {
-  0%,100% {
-    opacity: .5;
-    transform: scale(.8);
-  }
+      font-size: 1rem;
+    }
 
-  50% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-}
+    /* =========================================================
+       BUTTONS
+    ========================================================= */
 
-h1 {
-  font-size: clamp(4rem, 9vw, 7.5rem);
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
 
-  line-height: .95;
+      margin-top: 32px;
+    }
 
-  letter-spacing: -5px;
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
 
-  margin-bottom: 25px;
+      min-height: 48px;
 
-  background:
-    linear-gradient(
-      120deg,
-      #fff 20%,
-      var(--teal) 50%,
-      var(--blue) 80%
-    );
+      padding: 0 21px;
 
-  -webkit-background-clip: text;
-  background-clip: text;
+      border-radius: 12px;
 
-  color: transparent;
+      font-weight: 700;
+      font-size: .9rem;
 
-  text-shadow:
-    0 0 50px rgba(99,230,197,.08);
-}
+      transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+    }
 
-.hero-title {
-  font-size: clamp(1.55rem, 3vw, 2.45rem);
+    .btn:hover {
+      transform: translateY(-3px);
+    }
 
-  line-height: 1.55;
+    .btn-primary {
+      color: #04100d;
 
-  font-weight: 600;
+      background:
+        linear-gradient(
+          110deg,
+          var(--teal),
+          #8cf1d7
+        );
 
-  max-width: 760px;
+      box-shadow:
+        0 10px 35px rgba(98,230,196,.18);
+    }
 
-  margin-bottom: 24px;
-}
+    .btn-primary:hover {
+      box-shadow:
+        0 15px 45px rgba(98,230,196,.30);
+    }
 
-.hero-title strong {
-  background:
-    linear-gradient(
-      90deg,
-      var(--teal),
-      var(--blue)
-    );
+    .btn-secondary {
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.035);
 
-  -webkit-background-clip: text;
-  background-clip: text;
+      color: var(--text);
+    }
 
-  color: transparent;
-}
+    .btn-secondary:hover {
+      background: rgba(255,255,255,.075);
+    }
 
-.hero-description {
-  max-width: 730px;
+    /* =========================================================
+       EXECUTIVE PROFILE CARD
+    ========================================================= */
 
-  color: var(--muted);
+    .executive-card {
+      position: relative;
 
-  font-size: 1rem;
-}
+      min-height: 430px;
 
-/* =========================================================
-   BUTTONS
-========================================================= */
+      border-radius: 30px;
 
-.buttons {
-  display: flex;
+      border: 1px solid rgba(255,255,255,.10);
 
-  gap: 13px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,.09),
+          rgba(255,255,255,.025)
+        );
 
-  flex-wrap: wrap;
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
 
-  margin-top: 32px;
-}
+      box-shadow:
+        0 35px 100px rgba(0,0,0,.35);
 
-.btn {
-  display: inline-flex;
+      overflow: hidden;
 
-  align-items: center;
-  justify-content: center;
+      padding: 30px;
 
-  padding: 13px 23px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
 
-  border-radius: 13px;
+    .executive-card::before {
+      content: "";
 
-  font-weight: 700;
+      position: absolute;
 
-  position: relative;
+      width: 220px;
+      height: 220px;
 
-  overflow: hidden;
+      background: var(--teal);
 
-  transition:
-    transform .25s ease,
-    box-shadow .25s ease,
-    border-color .25s ease;
-}
+      filter: blur(90px);
 
-.btn:hover {
-  transform: translateY(-3px);
-}
+      opacity: .12;
 
-.btn-primary {
-  color: #04100d;
+      top: -80px;
+      left: -60px;
+    }
 
-  background:
-    linear-gradient(
-      110deg,
-      var(--teal),
-      #8cf4dd
-    );
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-  box-shadow:
-    0 12px 35px rgba(99,230,197,.16);
-}
+      position: relative;
+      z-index: 1;
+    }
 
-.btn-primary:hover {
-  box-shadow:
-    0 18px 45px rgba(99,230,197,.28);
-}
+    .card-label {
+      color: var(--muted);
+      font-size: .75rem;
+    }
 
-.btn-secondary {
-  border: 1px solid var(--border);
+    .card-symbol {
+      width: 45px;
+      height: 45px;
 
-  background: rgba(255,255,255,.045);
+      display: grid;
+      place-items: center;
 
-  color: var(--text);
+      border-radius: 14px;
 
-  backdrop-filter: blur(12px);
-}
+      background:
+        linear-gradient(
+          135deg,
+          rgba(98,230,196,.16),
+          rgba(110,168,255,.13)
+        );
 
-.btn-secondary:hover {
-  border-color: rgba(99,230,197,.35);
+      border: 1px solid rgba(98,230,196,.18);
 
-  box-shadow:
-    0 10px 35px rgba(0,0,0,.2);
-}
+      color: var(--teal);
 
-/* =========================================================
-   HERO PROFILE
-========================================================= */
+      font-size: 1.2rem;
+    }
 
-.profile-wrapper {
-  display: flex;
-  justify-content: center;
-}
+    .profile-center {
+      text-align: center;
 
-.profile {
-  width: min(350px, 76vw);
-  aspect-ratio: 1;
+      position: relative;
+      z-index: 1;
+    }
 
-  border-radius: 35px;
+    .profile-ring {
+      width: 150px;
+      height: 150px;
 
-  position: relative;
+      margin: auto auto 25px;
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(255,255,255,.10),
-      rgba(255,255,255,.025)
-    );
+      border-radius: 50%;
 
-  border: 1px solid rgba(255,255,255,.13);
+      padding: 2px;
 
-  backdrop-filter: blur(25px);
+      background:
+        conic-gradient(
+          var(--teal),
+          var(--blue),
+          var(--purple),
+          var(--teal)
+        );
 
-  box-shadow:
-    0 35px 100px rgba(0,0,0,.45),
-    inset 0 1px 0 rgba(255,255,255,.10);
+      animation: rotateRing 10s linear infinite;
+    }
 
-  display: flex;
+    @keyframes rotateRing {
+      to {
+        transform: rotate(360deg);
+      }
+    }
 
-  align-items: center;
-  justify-content: center;
+    .profile-inner {
+      width: 100%;
+      height: 100%;
 
-  overflow: hidden;
+      border-radius: 50%;
 
-  animation: profileFloat 7s ease-in-out infinite;
-}
+      display: grid;
+      place-items: center;
 
-.profile::before {
-  content: "";
+      background:
+        radial-gradient(
+          circle at 35% 30%,
+          rgba(98,230,196,.20),
+          transparent 40%
+        ),
+        #0b1120;
 
-  position: absolute;
+      font-size: 3.5rem;
+      font-weight: 800;
 
-  width: 230px;
-  height: 230px;
+      color: var(--teal);
+    }
 
-  border-radius: 50%;
+    .profile-center h2 {
+      font-size: 1.55rem;
+      margin-bottom: 4px;
+    }
 
-  background:
-    linear-gradient(
-      135deg,
-      var(--teal),
-      var(--blue),
-      var(--purple)
-    );
+    .profile-center p {
+      color: var(--muted);
+      font-size: .82rem;
+    }
 
-  filter: blur(45px);
+    .card-bottom {
+      position: relative;
+      z-index: 1;
 
-  opacity: .25;
-}
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
 
-.profile::after {
-  content: "";
+      gap: 8px;
+    }
 
-  position: absolute;
-  inset: 15px;
+    .mini-stat {
+      padding: 13px 8px;
 
-  border-radius: 28px;
+      text-align: center;
 
-  border: 1px solid rgba(255,255,255,.06);
-}
+      border-radius: 13px;
 
-@keyframes profileFloat {
-  0%,100% {
-    transform: translateY(0) rotate(0deg);
-  }
+      background: rgba(255,255,255,.035);
+      border: 1px solid rgba(255,255,255,.06);
+    }
 
-  50% {
-    transform: translateY(-10px) rotate(.5deg);
-  }
-}
+    .mini-stat strong {
+      display: block;
 
-.profile-placeholder {
-  position: relative;
-  z-index: 2;
+      color: var(--text);
 
-  text-align: center;
+      font-size: 1rem;
+    }
 
-  color: var(--muted);
-}
+    .mini-stat span {
+      color: var(--muted);
+      font-size: .68rem;
+    }
 
-.profile-placeholder .symbol {
-  font-size: 5rem;
+    /* =========================================================
+       SECTION
+    ========================================================= */
 
-  background:
-    linear-gradient(
-      135deg,
-      var(--teal),
-      var(--blue),
-      var(--purple)
-    );
+    section {
+      padding: 120px 0;
+    }
 
-  -webkit-background-clip: text;
-  background-clip: text;
+    .section-header {
+      max-width: 760px;
+      margin-bottom: 48px;
+    }
 
-  color: transparent;
+    .section-label {
+      color: var(--teal);
 
-  margin-bottom: 12px;
-}
+      font-size: .75rem;
+      font-weight: 800;
 
-.profile-placeholder strong {
-  display: block;
+      letter-spacing: 1px;
 
-  color: var(--text);
+      margin-bottom: 12px;
+    }
 
-  font-size: 1.1rem;
-}
+    h2.section-title {
+      font-size: clamp(2rem, 4vw, 3.35rem);
 
-.profile-image {
-  width: 100%;
-  height: 100%;
+      line-height: 1.3;
 
-  object-fit: cover;
+      margin-bottom: 17px;
+    }
 
-  display: block;
+    .section-header p {
+      color: var(--muted);
+    }
 
-  position: relative;
-  z-index: 3;
-}
+    /* =========================================================
+       GLASS CARDS
+    ========================================================= */
 
-/* =========================================================
-   STATS
-========================================================= */
+    .glass {
+      background:
+        linear-gradient(
+          135deg,
+          rgba(255,255,255,.07),
+          rgba(255,255,255,.025)
+        );
 
-.stats {
-  margin-top: 65px;
+      border: 1px solid var(--border);
 
-  display: grid;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
 
-  grid-template-columns: repeat(4, 1fr);
+      box-shadow:
+        0 25px 70px rgba(0,0,0,.18);
+    }
 
-  gap: 14px;
-}
+    /* =========================================================
+       IDENTITY
+    ========================================================= */
 
-.stat {
-  padding: 24px 18px;
+    .identity-grid {
+      display: grid;
 
-  text-align: center;
+      grid-template-columns: 1.15fr .85fr;
 
-  border-radius: 18px;
+      gap: 20px;
+    }
 
-  background:
-    rgba(255,255,255,.04);
+    .identity-card {
+      padding: 36px;
 
-  border: 1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius);
 
-  backdrop-filter: blur(16px);
+      transition:
+        transform .3s ease,
+        border-color .3s ease;
+    }
 
-  transition:
-    transform .3s ease,
-    background .3s ease,
-    border-color .3s ease;
-}
+    .identity-card:hover {
+      transform: translateY(-5px);
 
-.stat:hover {
-  transform: translateY(-5px);
+      border-color: rgba(98,230,196,.25);
+    }
 
-  background:
-    rgba(255,255,255,.07);
+    .identity-card.main {
+      background:
+        radial-gradient(
+          circle at 90% 10%,
+          rgba(98,230,196,.13),
+          transparent 35%
+        ),
+        linear-gradient(
+          135deg,
+          rgba(255,255,255,.08),
+          rgba(255,255,255,.025)
+        );
+    }
 
-  border-color:
-    rgba(99,230,197,.20);
-}
+    .identity-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+    }
 
-.stat-number {
-  font-size: 2rem;
+    .identity-card p {
+      color: var(--muted);
+      font-size: .95rem;
+    }
 
-  font-weight: 800;
+    /* =========================================================
+       METRICS
+    ========================================================= */
 
-  background:
-    linear-gradient(
-      90deg,
-      var(--teal),
-      var(--blue)
-    );
+    .metrics {
+      margin-top: 22px;
 
-  -webkit-background-clip: text;
-  background-clip: text;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
 
-  color: transparent;
-}
+      gap: 12px;
+    }
 
-.stat-label {
-  color: var(--muted);
+    .metric {
+      padding: 25px 18px;
 
-  font-size: .78rem;
+      border-radius: 18px;
 
-  margin-top: 3px;
-}
+      text-align: center;
 
-/* =========================================================
-   GENERAL
-========================================================= */
+      background: rgba(255,255,255,.035);
 
-section {
-  padding: 115px 0;
-}
+      border: 1px solid rgba(255,255,255,.07);
 
-.section-header {
-  max-width: 800px;
+      position: relative;
+      overflow: hidden;
+    }
 
-  margin-bottom: 45px;
-}
+    .metric::after {
+      content: "";
 
-.section-label {
-  color: var(--teal);
+      position: absolute;
 
-  font-size: .78rem;
+      height: 2px;
+      width: 40px;
 
-  font-weight: 800;
+      background:
+        linear-gradient(
+          90deg,
+          var(--teal),
+          var(--blue)
+        );
 
-  margin-bottom: 10px;
+      bottom: 0;
+      left: 50%;
 
-  letter-spacing: .5px;
-}
+      transform: translateX(-50%);
+    }
 
-h2 {
-  font-size: clamp(2rem, 4vw, 3.25rem);
+    .metric-number {
+      display: block;
 
-  line-height: 1.35;
+      font-size: 2rem;
 
-  margin-bottom: 17px;
-}
+      font-weight: 800;
 
-.section-header p {
-  color: var(--muted);
-}
+      background:
+        linear-gradient(
+          110deg,
+          var(--teal),
+          var(--blue)
+        );
 
-/* =========================================================
-   GLASS CARDS
-========================================================= */
+      -webkit-background-clip: text;
+      background-clip: text;
 
-.glass-card {
-  background:
-    linear-gradient(
-      145deg,
-      rgba(255,255,255,.075),
-      rgba(255,255,255,.025)
-    );
+      color: transparent;
+    }
 
-  border: 1px solid rgba(255,255,255,.09);
+    .metric-label {
+      color: var(--muted);
+      font-size: .78rem;
+    }
 
-  border-radius: var(--radius);
+    /* =========================================================
+       VALUE
+    ========================================================= */
 
-  backdrop-filter: blur(20px);
+    .value-box {
+      padding: 55px;
 
-  box-shadow:
-    0 20px 60px rgba(0,0,0,.20),
-    inset 0 1px 0 rgba(255,255,255,.05);
+      border-radius: 30px;
 
-  transition:
-    transform .35s ease,
-    border-color .35s ease,
-    background .35s ease,
-    box-shadow .35s ease;
-}
+      position: relative;
 
-.glass-card:hover {
-  transform: translateY(-7px);
+      overflow: hidden;
 
-  border-color:
-    rgba(99,230,197,.22);
+      background:
+        radial-gradient(
+          circle at 85% 15%,
+          rgba(155,124,255,.13),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 10% 90%,
+          rgba(98,230,196,.09),
+          transparent 30%
+        ),
+        rgba(255,255,255,.035);
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(255,255,255,.10),
-      rgba(255,255,255,.035)
-    );
+      border: 1px solid rgba(255,255,255,.09);
+    }
 
-  box-shadow:
-    0 30px 80px rgba(0,0,0,.28),
-    0 0 40px rgba(99,230,197,.04);
-}
+    .value-box h3 {
+      font-size: clamp(1.7rem,3vw,2.5rem);
 
-/* =========================================================
-   IDENTITY
-========================================================= */
+      margin-bottom: 18px;
+    }
 
-.identity {
-  display: grid;
+    .value-box > p {
+      color: var(--muted);
+      max-width: 850px;
+      margin-bottom: 40px;
+    }
 
-  grid-template-columns: 1fr 1fr;
+    .value-flow {
+      display: grid;
 
-  gap: 20px;
-}
+      grid-template-columns: repeat(4,1fr);
 
-.identity-card {
-  padding: 36px;
-}
+      gap: 12px;
+    }
 
-.identity-card.main {
-  background:
-    linear-gradient(
-      135deg,
-      rgba(99,230,197,.09),
-      rgba(110,168,254,.035)
-    );
-}
+    .value-step {
+      padding: 23px 15px;
 
-.identity-card h3 {
-  font-size: 1.45rem;
+      border-radius: 16px;
 
-  margin-bottom: 15px;
-}
+      background: rgba(255,255,255,.045);
 
-.identity-card p {
-  color: var(--muted);
-}
+      border: 1px solid rgba(255,255,255,.08);
 
-/* =========================================================
-   VALUE ARCHITECTURE
-========================================================= */
+      text-align: center;
 
-.value-box {
-  padding: 55px;
+      transition: .3s ease;
+    }
 
-  border-radius: 30px;
+    .value-step:hover {
+      transform: translateY(-5px);
 
-  background:
-    radial-gradient(
-      circle at 85% 10%,
-      rgba(99,230,197,.11),
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 15% 90%,
-      rgba(167,139,250,.08),
-      transparent 30%
-    ),
-    rgba(255,255,255,.035);
+      background: rgba(98,230,196,.07);
 
-  border: 1px solid rgba(99,230,197,.13);
+      border-color: rgba(98,230,196,.20);
+    }
 
-  backdrop-filter: blur(20px);
-}
+    .value-step span {
+      display: block;
 
-.value-box h3 {
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
+      color: var(--teal);
 
-  margin-bottom: 18px;
-}
+      font-size: .7rem;
+      font-weight: 800;
 
-.value-box > p {
-  color: var(--muted);
+      margin-bottom: 8px;
+    }
 
-  max-width: 850px;
+    .value-step strong {
+      font-size: .9rem;
+    }
 
-  margin-bottom: 40px;
-}
+    /* =========================================================
+       SKILLS
+    ========================================================= */
 
-.value-flow {
-  display: grid;
+    .skills-grid {
+      display: grid;
 
-  grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(3,1fr);
 
-  gap: 12px;
-}
+      gap: 15px;
+    }
 
-.value-step {
-  padding: 24px 18px;
+    .skill {
+      padding: 28px;
 
-  border-radius: 17px;
+      border-radius: 20px;
 
-  text-align: center;
+      background: rgba(255,255,255,.035);
 
-  background:
-    rgba(255,255,255,.045);
+      border: 1px solid rgba(255,255,255,.08);
 
-  border: 1px solid rgba(255,255,255,.08);
+      transition: .3s ease;
 
-  transition:
-    transform .3s ease,
-    background .3s ease;
-}
+      position: relative;
+      overflow: hidden;
+    }
 
-.value-step:hover {
-  transform: translateY(-6px);
+    .skill::before {
+      content: "";
 
-  background:
-    rgba(99,230,197,.07);
-}
+      position: absolute;
 
-.value-step span {
-  display: block;
+      width: 100px;
+      height: 100px;
 
-  color: var(--teal);
+      border-radius: 50%;
 
-  font-size: .72rem;
+      background: var(--blue);
 
-  font-weight: 800;
+      filter: blur(55px);
 
-  margin-bottom: 7px;
-}
+      opacity: 0;
 
-/* =========================================================
-   SKILLS
-========================================================= */
+      transition: .3s ease;
 
-.skills-grid {
-  display: grid;
+      top: -50px;
+      right: -40px;
+    }
 
-  grid-template-columns: repeat(3,1fr);
+    .skill:hover {
+      transform: translateY(-6px);
 
-  gap: 17px;
-}
+      background: rgba(255,255,255,.065);
 
-.skill {
-  padding: 28px;
-}
+      border-color: rgba(110,168,255,.2);
+    }
 
-.skill-number {
-  font-size: .75rem;
+    .skill:hover::before {
+      opacity: .14;
+    }
 
-  font-weight: 800;
+    .skill-number {
+      color: var(--teal);
 
-  margin-bottom: 16px;
+      font-size: .7rem;
+      font-weight: 800;
 
-  color: var(--blue);
-}
+      margin-bottom: 18px;
+    }
 
-.skill h3 {
-  font-size: 1.08rem;
+    .skill h3 {
+      font-size: 1.05rem;
+      margin-bottom: 9px;
+    }
 
-  margin-bottom: 10px;
-}
+    .skill p {
+      color: var(--muted);
+      font-size: .86rem;
+    }
 
-.skill p {
-  color: var(--muted);
+    /* =========================================================
+       JOURNEY
+    ========================================================= */
 
-  font-size: .9rem;
-}
+    .timeline {
+      max-width: 900px;
 
-/* colored accents */
+      border-right: 1px solid rgba(98,230,196,.18);
 
-.skill:nth-child(3n+1) .skill-number {
-  color: var(--teal);
-}
+      padding-right: 35px;
 
-.skill:nth-child(3n+2) .skill-number {
-  color: var(--blue);
-}
+      display: grid;
+      gap: 38px;
+    }
 
-.skill:nth-child(3n) .skill-number {
-  color: var(--purple);
-}
+    .timeline-item {
+      position: relative;
+    }
 
-/* =========================================================
-   TIMELINE
-========================================================= */
+    .timeline-item::before {
+      content: "";
 
-.timeline {
-  border-right: 2px solid rgba(99,230,197,.18);
+      position: absolute;
 
-  padding-right: 30px;
+      right: -42px;
+      top: 7px;
 
-  display: grid;
+      width: 13px;
+      height: 13px;
 
-  gap: 34px;
-}
+      border-radius: 50%;
 
-.timeline-item {
-  position: relative;
+      background: var(--teal);
 
-  padding: 25px 28px;
+      box-shadow:
+        0 0 0 5px rgba(98,230,196,.07),
+        0 0 20px rgba(98,230,196,.25);
+    }
 
-  border-radius: 18px;
+    .timeline-item h3 {
+      font-size: 1.1rem;
+      margin-bottom: 7px;
+    }
 
-  background:
-    rgba(255,255,255,.035);
+    .timeline-item p {
+      color: var(--muted);
+      font-size: .9rem;
+    }
 
-  border: 1px solid rgba(255,255,255,.07);
+    /* =========================================================
+       CONTACT
+    ========================================================= */
 
-  transition:
-    transform .3s ease,
-    background .3s ease;
-}
+    .contact-card {
+      padding: 70px 40px;
 
-.timeline-item:hover {
-  transform: translateX(-5px);
+      border-radius: 32px;
 
-  background:
-    rgba(255,255,255,.055);
-}
+      text-align: center;
 
-.timeline-item::before {
-  content: "";
+      position: relative;
 
-  position: absolute;
+      overflow: hidden;
 
-  right: -39px;
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(98,230,196,.12),
+          transparent 35%
+        ),
+        linear-gradient(
+          135deg,
+          rgba(255,255,255,.07),
+          rgba(255,255,255,.025)
+        );
 
-  top: 29px;
+      border: 1px solid rgba(98,230,196,.15);
+    }
 
-  width: 13px;
-  height: 13px;
+    .contact-card::before {
+      content: "";
 
-  border-radius: 50%;
+      position: absolute;
 
-  background: var(--teal);
+      width: 500px;
+      height: 2px;
 
-  box-shadow:
-    0 0 0 5px rgba(99,230,197,.08),
-    0 0 20px rgba(99,230,197,.35);
-}
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          var(--teal),
+          var(--blue),
+          transparent
+        );
 
-.timeline-item h3 {
-  font-size: 1.15rem;
+      top: 0;
+      left: 50%;
 
-  margin-bottom: 7px;
-}
+      transform: translateX(-50%);
+    }
 
-.timeline-item p {
-  color: var(--muted);
+    .contact-card h2 {
+      max-width: 800px;
 
-  font-size: .92rem;
-}
+      margin: 0 auto 18px;
 
-/* =========================================================
-   CONTACT
-========================================================= */
+      font-size: clamp(2rem,4vw,3.2rem);
+    }
 
-.cta {
-  position: relative;
+    .contact-card > p {
+      max-width: 700px;
 
-  padding: 75px 45px;
+      margin: auto;
 
-  border-radius: 32px;
+      color: var(--muted);
+    }
 
-  overflow: hidden;
+    .contact-card .buttons {
+      justify-content: center;
+    }
 
-  text-align: center;
+    .email-display {
+      margin-top: 25px;
 
-  background:
-    radial-gradient(
-      circle at 20% 20%,
-      rgba(99,230,197,.12),
-      transparent 32%
-    ),
-    radial-gradient(
-      circle at 80% 80%,
-      rgba(167,139,250,.12),
-      transparent 32%
-    ),
-    rgba(255,255,255,.04);
+      direction: ltr;
 
-  border: 1px solid rgba(99,230,197,.17);
+      text-align: center;
+    }
 
-  backdrop-filter: blur(20px);
-}
+    .email-display a {
+      color: var(--muted);
 
-.cta::before {
-  content: "";
+      font-size: .9rem;
 
-  position: absolute;
+      transition: .25s ease;
+    }
 
-  width: 350px;
-  height: 350px;
+    .email-display a:hover {
+      color: var(--teal);
+    }
 
-  border-radius: 50%;
+    /* =========================================================
+       FOOTER
+    ========================================================= */
 
-  border: 1px solid rgba(99,230,197,.10);
+    footer {
+      padding: 35px 0;
 
-  top: -220px;
-  left: 50%;
+      border-top: 1px solid rgba(255,255,255,.07);
 
-  transform: translateX(-50%);
-}
+      color: var(--muted);
 
-.cta h2 {
-  position: relative;
+      text-align: center;
 
-  max-width: 850px;
+      font-size: .78rem;
+    }
 
-  margin: auto auto 20px;
-}
+    /* =========================================================
+       REVEAL ANIMATION
+    ========================================================= */
 
-.question {
-  position: relative;
+    .reveal {
+      opacity: 0;
+      transform: translateY(25px);
 
-  max-width: 850px;
+      animation: reveal .8s ease forwards;
+    }
 
-  margin: 30px auto;
+    .delay-1 { animation-delay: .1s; }
+    .delay-2 { animation-delay: .2s; }
+    .delay-3 { animation-delay: .3s; }
+    .delay-4 { animation-delay: .4s; }
 
-  padding: 22px;
+    @keyframes reveal {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-  border-right: 3px solid var(--teal);
+    /* =========================================================
+       RESPONSIVE
+    ========================================================= */
 
-  border-radius: 12px;
+    @media (max-width: 950px) {
 
-  background:
-    rgba(255,255,255,.045);
+      .hero-grid,
+      .identity-grid {
+        grid-template-columns: 1fr;
+      }
 
-  font-size: 1.04rem;
-}
+      .hero {
+        padding-top: 70px;
+      }
 
-.cta > p {
-  position: relative;
+      .executive-card {
+        max-width: 520px;
+        width: 100%;
+        margin: auto;
+      }
 
-  max-width: 720px;
+      .metrics {
+        grid-template-columns: repeat(2,1fr);
+      }
 
-  margin: auto;
+      .value-flow {
+        grid-template-columns: repeat(2,1fr);
+      }
 
-  color: var(--muted);
-}
+      .skills-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
 
-.cta .buttons {
-  position: relative;
+      .nav-links {
+        display: none;
+      }
+    }
 
-  justify-content: center;
-}
+    @media (max-width: 600px) {
 
-/* =========================================================
-   EMAIL
-========================================================= */
+      section {
+        padding: 80px 0;
+      }
 
-.email {
-  margin-top: 20px;
+      .hero {
+        padding: 60px 0;
+      }
 
-  direction: ltr;
+      h1 {
+        font-size: 4.8rem;
+        letter-spacing: -4px;
+      }
 
-  text-align: center;
+      .hero-title {
+        font-size: 1.45rem;
+      }
 
-  color: var(--muted);
+      .executive-card {
+        min-height: 390px;
+      }
 
-  font-size: .9rem;
-}
+      .metrics,
+      .skills-grid,
+      .value-flow {
+        grid-template-columns: 1fr;
+      }
 
-.email a {
-  color: var(--teal);
+      .value-box {
+        padding: 32px 20px;
+      }
 
-  transition: color .2s ease;
-}
+      .contact-card {
+        padding: 50px 22px;
+      }
 
-.email a:hover {
-  color: var(--blue);
-}
+      .card-bottom {
+        grid-template-columns: repeat(3,1fr);
+      }
 
-/* =========================================================
-   FOOTER
-========================================================= */
+      .timeline {
+        padding-right: 25px;
+      }
 
-footer {
-  padding: 40px 0;
-
-  border-top: 1px solid rgba(255,255,255,.08);
-
-  color: var(--muted);
-
-  text-align: center;
-
-  font-size: .8rem;
-}
-
-.footer-email {
-  display: inline-block;
-
-  margin-top: 7px;
-
-  direction: ltr;
-
-  color: var(--teal);
-
-  transition: color .2s ease;
-}
-
-.footer-email:hover {
-  color: var(--blue);
-}
-
-/* =========================================================
-   SCROLL REVEAL
-========================================================= */
-
-.reveal {
-  opacity: 0;
-
-  transform: translateY(35px);
-
-  transition:
-    opacity .8s ease,
-    transform .8s ease;
-}
-
-.reveal.visible {
-  opacity: 1;
-
-  transform: translateY(0);
-}
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
-
-@media (max-width: 900px) {
-
-  .hero {
-    padding-top: 65px;
-  }
-
-  .hero-grid {
-    grid-template-columns: 1fr;
-
-    text-align: center;
-
-    gap: 50px;
-  }
-
-  .profile-wrapper {
-    order: -1;
-  }
-
-  .profile {
-    width: 245px;
-  }
-
-  .hero-description {
-    margin: auto;
-  }
-
-  .buttons {
-    justify-content: center;
-  }
-
-  .stats {
-    grid-template-columns: repeat(2,1fr);
-  }
-
-  .identity {
-    grid-template-columns: 1fr;
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .value-flow {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .nav-links {
-    display: none;
-  }
-}
-
-@media (max-width: 560px) {
-
-  section {
-    padding: 80px 0;
-  }
-
-  h1 {
-    letter-spacing: -2px;
-  }
-
-  .stats {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .value-flow {
-    grid-template-columns: 1fr;
-  }
-
-  .value-box {
-    padding: 32px 22px;
-  }
-
-  .cta {
-    padding: 45px 22px;
-  }
-
-  .timeline {
-    padding-right: 22px;
-  }
-
-  .timeline-item::before {
-    right: -31px;
-  }
-}
-
-</style>
-
+      .timeline-item::before {
+        right: -32px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- =======================================================
-     ANIMATED BACKGROUND
-======================================================= -->
-
-<div class="ambient">
+  <!-- Ambient background -->
   <div class="orb one"></div>
   <div class="orb two"></div>
   <div class="orb three"></div>
-</div>
 
-<div class="grid-bg"></div>
+  <!-- =========================================================
+       NAVIGATION
+  ========================================================== -->
 
-<!-- =======================================================
-     NAVIGATION
-======================================================= -->
+  <nav>
+    <div class="container nav-inner">
 
-<nav>
-
-  <div class="container nav-inner">
-
-```
-<a href="#top" class="logo">
-  عماد
-</a>
-
-<ul class="nav-links">
-
-  <li>
-    <a href="#identity">
-      هویت حرفه‌ای
-    </a>
-  </li>
-
-  <li>
-    <a href="#value">
-      خلق ارزش
-    </a>
-  </li>
-
-  <li>
-    <a href="#skills">
-      توانمندی‌ها
-    </a>
-  </li>
-
-  <li>
-    <a href="#journey">
-      مسیر حرفه‌ای
-    </a>
-  </li>
-
-  <li>
-    <a href="#contact">
-      ارتباط
-    </a>
-  </li>
-
-</ul>
-```
-
-  </div>
-
-</nav>
-
-<!-- =======================================================
-     MAIN
-======================================================= -->
-
-<main id="top">
-
-<!-- =======================================================
-     HERO
-======================================================= -->
-
-<section class="hero">
-
-  <div class="container">
-
-```
-<div class="hero-grid">
-
-  <div class="reveal">
-
-    <span class="eyebrow">
-      Business Leadership • Legal Governance
-    </span>
-
-    <h1>
-      عماد
-    </h1>
-
-    <div class="hero-title">
-
-      <strong>
-        راهبری و توسعه کسب‌وکار
-      </strong>
-
-      با حاکمیت حقوقی؛
-
-      از استراتژی و مدل‌سازی تا معماری خلق ارزش.
-
-    </div>
-
-    <p class="hero-description">
-
-      تجربه من در مهندسی، تکنولوژی، توسعه کسب‌وکار،
-      مدیریت حقوقی، قراردادهای تجاری و مدیریت ریسک
-      شکل گرفته است.
-
-      این تجربه را برای ایجاد ارتباط میان استراتژی،
-      ساختار کسب‌وکار، الزامات حقوقی و اجرای عملی
-      به کار می‌گیرم.
-
-    </p>
-
-    <div class="buttons">
-
-      <a
-        href="#contact"
-        class="btn btn-primary"
-      >
-        شروع یک گفتگو
+      <a href="#" class="logo">
+        <span class="logo-mark">ع</span>
+        عماد
       </a>
 
-      <a
-        href="#value"
-        class="btn btn-secondary"
-      >
-        چگونه خلق ارزش می‌کنم؟
+      <ul class="nav-links">
+        <li><a href="#identity">هویت حرفه‌ای</a></li>
+        <li><a href="#value">خلق ارزش</a></li>
+        <li><a href="#skills">توانمندی‌ها</a></li>
+        <li><a href="#journey">مسیر حرفه‌ای</a></li>
+      </ul>
+
+      <a href="#contact" class="nav-contact">
+        ارتباط
       </a>
 
     </div>
+  </nav>
 
-  </div>
 
+  <main>
 
-  <div class="profile-wrapper reveal">
+    <!-- =======================================================
+         HERO
+    ======================================================== -->
 
-    <div class="profile">
+    <section class="hero">
 
-      <!--
-      برای قرار دادن عکس:
+      <div class="container hero-grid">
 
-      <img
-        src="profile.jpg"
-        alt="عماد"
-        class="profile-image"
-      >
-      -->
+        <div>
 
-      <div class="profile-placeholder">
+          <div class="eyebrow reveal">
+            <span class="status-dot"></span>
+            Business Leadership • Legal Governance
+          </div>
 
-        <div class="symbol">
-          ◈
+          <h1 class="reveal delay-1">
+            عماد
+          </h1>
+
+          <div class="hero-title reveal delay-2">
+
+            <strong>
+              راهبری و توسعه کسب‌وکار
+            </strong>
+
+            با حاکمیت حقوقی؛
+
+            از استراتژی و مدل‌سازی تا معماری خلق ارزش.
+
+          </div>
+
+          <p class="hero-description reveal delay-3">
+
+            تجربه من در مهندسی، تکنولوژی، توسعه کسب‌وکار،
+            مدیریت حقوقی، قراردادهای تجاری و مدیریت ریسک شکل گرفته است.
+            این تجربه را برای ایجاد ارتباط میان استراتژی،
+            ساختار کسب‌وکار، الزامات حقوقی و اجرای عملی به کار می‌گیرم.
+
+          </p>
+
+          <div class="buttons reveal delay-4">
+
+            <a
+              href="#contact"
+              class="btn btn-primary"
+            >
+              شروع یک گفتگو
+            </a>
+
+            <a
+              href="#value"
+              class="btn btn-secondary"
+            >
+              معماری خلق ارزش
+            </a>
+
+          </div>
+
         </div>
 
-        <strong>
-          عماد
-        </strong>
 
-        <span>
-          Business • Strategy • Legal
-        </span>
+        <!-- EXECUTIVE CARD -->
+
+        <div class="executive-card reveal delay-2">
+
+          <div class="card-top">
+
+            <span class="card-label">
+              EXECUTIVE PROFILE
+            </span>
+
+            <div class="card-symbol">
+              ◈
+            </div>
+
+          </div>
+
+
+          <div class="profile-center">
+
+            <!--
+              اگر عکس خودت را داری،
+              می‌توانی این بخش را با img جایگزین کنی.
+            -->
+
+            <div class="profile-ring">
+
+              <div class="profile-inner">
+                ع
+              </div>
+
+            </div>
+
+            <h2>
+              عماد
+            </h2>
+
+            <p>
+              Business • Strategy • Legal Governance
+            </p>
+
+          </div>
+
+
+          <div class="card-bottom">
+
+            <div class="mini-stat">
+              <strong>Strategy</strong>
+              <span>استراتژی</span>
+            </div>
+
+            <div class="mini-stat">
+              <strong>Business</strong>
+              <span>توسعه کسب‌وکار</span>
+            </div>
+
+            <div class="mini-stat">
+              <strong>Governance</strong>
+              <span>حاکمیت</span>
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
 
-    </div>
-
-  </div>
-
-</div>
+    </section>
 
 
-<!-- ===================================================
-     ANIMATED STATISTICS
-=================================================== -->
+    <!-- =======================================================
+         IDENTITY
+    ======================================================== -->
 
-<div class="stats reveal">
+    <section id="identity">
 
-  <div class="stat">
+      <div class="container">
 
-    <div
-      class="stat-number"
-      data-target="3"
-      data-suffix="+"
-    >
-      0
-    </div>
+        <div class="section-header">
 
-    <div class="stat-label">
-      حوزه تخصصی
-    </div>
+          <div class="section-label">
+            01 — PROFESSIONAL IDENTITY
+          </div>
 
-  </div>
+          <h2 class="section-title">
+            فراتر از مدیریت امور حقوقی و قرارداد
+          </h2>
 
+          <p>
+            نقطه تمرکز من جایی است که تصمیم‌های کسب‌وکار
+            باید به ساختار، توافق، مسئولیت و سازوکار اجرایی
+            تبدیل شوند.
+          </p>
 
-  <div class="stat">
-
-    <div
-      class="stat-number"
-      data-target="9"
-      data-suffix="+"
-    >
-      0
-    </div>
-
-    <div class="stat-label">
-      حوزه توانمندی
-    </div>
-
-  </div>
+        </div>
 
 
-  <div class="stat">
+        <div class="identity-grid">
 
-    <div
-      class="stat-number"
-      data-target="4"
-      data-suffix=""
-    >
-      0
-    </div>
+          <article class="identity-card main glass">
 
-    <div class="stat-label">
-      محور خلق ارزش
-    </div>
+            <h3>
+              راهبری و توسعه کسب‌وکار با حاکمیت حقوقی
+            </h3>
 
-  </div>
+            <p>
 
+              حاکمیت حقوقی برای من صرفاً بررسی قرارداد پس از
+              تصمیم‌گیری نیست؛ بلکه بخشی از معماری تصمیم‌گیری
+              و راهبری کسب‌وکار است.
 
-  <div class="stat">
+              <br><br>
 
-    <div
-      class="stat-number"
-      data-target="360"
-      data-suffix="°"
-    >
-      0
-    </div>
+              هدف، ایجاد ساختاری است که در آن منافع تجاری،
+              ریسک، تعهدات، مسئولیت‌ها و قابلیت اجرا
+              از ابتدا در کنار یکدیگر دیده شوند.
 
-    <div class="stat-label">
-      نگاه کسب‌وکار
-    </div>
+            </p>
 
-  </div>
-
-</div>
-```
-
-  </div>
-
-</section>
-
-<!-- =======================================================
-     IDENTITY
-======================================================= -->
-
-<section id="identity">
-
-  <div class="container">
-
-```
-<div class="section-header reveal">
-
-  <div class="section-label">
-    01 — هویت حرفه‌ای
-  </div>
-
-  <h2>
-    فراتر از مدیریت امور حقوقی و قرارداد
-  </h2>
-
-  <p>
-    نقطه تمرکز من جایی است که تصمیم‌های کسب‌وکار
-    باید به ساختار، توافق، مسئولیت و سازوکار اجرایی
-    تبدیل شوند.
-  </p>
-
-</div>
+          </article>
 
 
-<div class="identity">
+          <article class="identity-card glass">
 
-  <div class="identity-card glass-card reveal">
+            <h3>
+              اتصال استراتژی به اجرا
+            </h3>
 
-    <h3>
+            <p>
+
+              تجربه در محیط‌های فنی، عملیاتی و تجاری به من
+              امکان داده است میان زبان مدیران، تیم‌های فنی،
+              حقوقی، مالی و فروش ارتباط برقرار کنم.
+
+              <br><br>
+
+              نتیجه این نگاه، تبدیل ایده و استراتژی به
+              مدل‌های قابل فهم، توافق‌های روشن و ساختارهای
+              قابل اجراست.
+
+            </p>
+
+          </article>
+
+        </div>
+
+
+        <!-- ANIMATED METRICS -->
+
+        <div class="metrics">
+
+          <div class="metric">
+            <span class="metric-number" data-target="9">0</span>
+            <span class="metric-label">
+              حوزه توانمندی
+            </span>
+          </div>
+
+          <div class="metric">
+            <span class="metric-number" data-target="4">0</span>
+            <span class="metric-label">
+              محور اصلی تجربه
+            </span>
+          </div>
+
+          <div class="metric">
+            <span class="metric-number" data-target="3">0</span>
+            <span class="metric-label">
+              نگاه مکمل
+            </span>
+          </div>
+
+          <div class="metric">
+            <span class="metric-number" data-target="1">0</span>
+            <span class="metric-label">
+              نقطه اتصال
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         VALUE
+    ======================================================== -->
+
+    <section id="value">
+
+      <div class="container">
+
+        <div class="value-box">
+
+          <div class="section-label">
+            02 — VALUE ARCHITECTURE
+          </div>
+
+          <h3>
+            از «چه می‌خواهیم؟» تا «چطور آن را خلق و اجرا کنیم؟»
+          </h3>
+
+          <p>
+
+            یکی از کاربردهای اصلی این تخصص، کمک به تیم‌های
+            تدوین استراتژی، مدل‌سازی کسب‌وکار و طراحی معماری
+            خلق ارزش است؛ به شکلی که مشخص باشد ارزش برای چه کسی،
+            چگونه، توسط چه اجزایی و تحت چه قواعدی ایجاد و منتقل می‌شود.
+
+            <br><br>
+
+            در این نگاه، قرارداد و حاکمیت حقوقی در انتهای فرآیند
+            قرار نمی‌گیرند؛ بلکه بخشی از طراحی مدل کسب‌وکار
+            و سازوکار خلق ارزش هستند.
+
+          </p>
+
+
+          <div class="value-flow">
+
+            <div class="value-step">
+              <span>01</span>
+              <strong>تدوین استراتژی</strong>
+            </div>
+
+            <div class="value-step">
+              <span>02</span>
+              <strong>مدل‌سازی کسب‌وکار</strong>
+            </div>
+
+            <div class="value-step">
+              <span>03</span>
+              <strong>معماری خلق ارزش</strong>
+            </div>
+
+            <div class="value-step">
+              <span>04</span>
+              <strong>حاکمیت و اجرای مدل</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         SKILLS
+    ======================================================== -->
+
+    <section id="skills">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div class="section-label">
+            03 — CAPABILITIES
+          </div>
+
+          <h2 class="section-title">
+            ابزارهایی برای تبدیل تصمیم به ساختار
+          </h2>
+
+          <p>
+            ترکیبی از تجربه فنی، تجاری، قراردادی و مدیریتی
+            برای حل مسئله‌های پیچیده کسب‌وکار.
+          </p>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+          <article class="skill">
+            <div class="skill-number">01</div>
+            <h3>راهبری کسب‌وکار</h3>
+            <p>
+              کمک به تصمیم‌گیری و طراحی ساختارهای تجاری
+              با درنظرگرفتن اهداف، ریسک‌ها، ذی‌نفعان و الزامات اجرایی.
+            </p>
+          </article>
+
+
+          <article class="skill">
+            <div class="skill-number">02</div>
+            <h3>حاکمیت حقوقی</h3>
+            <p>
+              تبدیل الزامات حقوقی و قراردادی به بخشی از
+              سازوکار راهبری و کنترل ریسک کسب‌وکار.
+            </p>
+          </article>
+
+
+          <article class="skill">
+            <div class="skill-number">03</div>
+            <h3>قرارداد و مذاکره</h3>
+            <p>
+              طراحی، بررسی و مذاکره قراردادهای تجاری
+              با نگاه حقوقی و مدیریت چرخه عمر قرارداد.
+            </p>
+          </article>
+
+
+          <article class="skill">
+            <div class="skill-number">04</div>
+            <h3>استراتژی و مدل‌سازی</h3>
+            <p>
+              تحلیل بازار، مدل‌سازی کسب‌وکار، طراحی ارزش پیشنهادی
+              و تبدیل ایده‌های تجاری به ساختار قابل اجرا.
+            </p>
+          </article>
+
+
+          <article class="skill">
+            <div class="skill-number">05</div>
+            <h3>معماری خلق ارزش</h3>
+            <p>
+              شناسایی اجزای لازم برای خلق، انتقال و دریافت ارزش
+              و طراحی روابط میان ذی‌نفعان.
+            </p>
+          </article>
+
+
+          <article class="skill">
+            <div class="skill-number">06</div>
+            <h3>مدیریت ریسک</h3>
+            <p>
+              شناسایی ریسک‌های حقوقی، قراردادی، تجاری و عملیاتی
+              و طراحی سازوکارهای مدیریت آن‌ها.
+            </p>
+          </article>
+
+
+          <article class="skill">
+            <div class="skill-number">07</div>
+            <h3>RFP و تأمین‌کنندگان</h3>
+            <p>
+              مدیریت فرآیندهای مناقصه و RFP، ارزیابی تأمین‌کنندگان
+              و طراحی چارچوب مناسب برای همکاری تجاری.
+            </p>
+          </article>
+
+
+          <article class="skill">
+            <div class="skill-number">08</div>
+            <h3>مدیریت پروژه</h3>
+            <p>
+              حرکت از ایده و نیازمندی تا اجرا با استفاده از
+              Agile، Scrum و اصول مدیریت پروژه.
+            </p>
+          </article>
+
+
+          <article class="skill">
+            <div class="skill-number">09</div>
+            <h3>اتصال فنی و تجاری</h3>
+            <p>
+              ایجاد ارتباط میان تیم‌های فنی، حقوقی، مالی،
+              فروش و مدیریت برای ایجاد یک مسیر مشترک.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         JOURNEY
+    ======================================================== -->
+
+    <section id="journey">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div class="section-label">
+            04 — PROFESSIONAL JOURNEY
+          </div>
+
+          <h2 class="section-title">
+            تجربه در چند محیط، با یک نقطه مشترک
+          </h2>
+
+          <p>
+            حل مسئله، مدیریت ریسک و ایجاد ارتباط میان
+            تکنولوژی، عملیات و کسب‌وکار.
+          </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+          <div class="timeline-item">
+
+            <h3>
+              مهندسی و عملیات بین‌المللی
+            </h3>
+
+            <p>
+              فعالیت در محیط‌های فنی و عملیاتی پیچیده،
+              نگهداری و عیب‌یابی سیستم‌های الکتریکی،
+              ارتباطی و ناوبری و همکاری با نهادهای
+              نظارتی و بازرسی.
+            </p>
+
+          </div>
+
+
+          <div class="timeline-item">
+
+            <h3>
+              توسعه کسب‌وکار و خدمات دیجیتال
+            </h3>
+
+            <p>
+              توسعه خدمات دیجیتال، ایجاد همکاری‌های تجاری،
+              تحلیل بازار و رقبا و تبدیل نیازهای کسب‌وکار
+              به الزامات قابل اجرا برای تیم‌های فنی.
+            </p>
+
+          </div>
+
+
+          <div class="timeline-item">
+
+            <h3>
+              قرارداد و عملیات تجاری
+            </h3>
+
+            <p>
+              مدیریت چرخه عمر قراردادهای تجاری، مذاکره،
+              مدیریت مناقصه و RFP، ارزیابی ریسک و همکاری
+              با تیم‌های حقوقی، فنی، مالی و مدیریتی.
+            </p>
+
+          </div>
+
+
+          <div class="timeline-item">
+
+            <h3>
+              نقطه اتصال امروز
+            </h3>
+
+            <p>
+              ترکیب تجربه فنی، تجاری و قراردادی برای
+              راهبری و توسعه کسب‌وکار با حاکمیت حقوقی؛
+              با تمرکز بر استراتژی، مدل‌سازی و معماری خلق ارزش.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         CONTACT
+    ======================================================== -->
+
+    <section id="contact">
+
+      <div class="container">
+
+        <div class="contact-card">
+
+          <div class="section-label">
+            05 — CONTACT
+          </div>
+
+          <h2>
+            شاید وقت آن رسیده باشد
+            یک گفت‌وگوی متفاوت داشته باشیم.
+          </h2>
+
+          <p>
+            اگر فکر می‌کنید ترکیب تجربه فنی، تجاری و حقوقی
+            می‌تواند برای شما یا کسب‌وکارتان مفید باشد،
+            برای گفت‌وگو، مشاوره یا بررسی یک فرصت همکاری
+            می‌توانید با من در ارتباط باشید.
+          </p>
+
+
+          <div class="buttons">
+
+            <!-- FIXED EMAIL LINK -->
+
+            <a
+              href="mailto:reeemad@gmail.com"
+              class="btn btn-primary"
+            >
+              تماس با عماد
+            </a>
+
+
+            <!-- FIXED LINKEDIN LINK -->
+
+            <a
+              href="https://www.linkedin.com/in/emad-r-428a55282/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              LinkedIn
+            </a>
+
+          </div>
+
+
+          <div class="email-display">
+
+            <a href="mailto:reeemad@gmail.com">
+              reeemad@gmail.com
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
+  <footer>
+
+    <div class="container">
+
+      © 2026 عماد —
       راهبری و توسعه کسب‌وکار با حاکمیت حقوقی
-    </h3>
 
-    <p>
+      <br>
 
-      حاکمیت حقوقی برای من صرفاً بررسی قرارداد
-      پس از تصمیم‌گیری نیست؛ بلکه بخشی از معماری
-      تصمیم‌گیری و راهبری کسب‌وکار است.
-
-      <br><br>
-
-      هدف، ایجاد ساختاری است که در آن منافع تجاری،
-      ریسک، تعهدات، مسئولیت‌ها و قابلیت اجرا
-      از ابتدا در کنار یکدیگر دیده شوند.
-
-    </p>
-
-  </div>
-
-
-  <div class="identity-card glass-card reveal">
-
-    <h3>
-      اتصال استراتژی به اجرا
-    </h3>
-
-    <p>
-
-      تجربه در محیط‌های فنی، عملیاتی و تجاری
-      امکان ایجاد ارتباط میان زبان مدیران،
-      تیم‌های فنی، حقوقی، مالی و فروش را فراهم کرده است.
-
-      <br><br>
-
-      نتیجه این نگاه، تبدیل ایده و استراتژی
-      به مدل‌های قابل فهم، توافق‌های روشن
-      و ساختارهای قابل اجراست.
-
-    </p>
-
-  </div>
-
-</div>
-```
-
-  </div>
-
-</section>
-
-<!-- =======================================================
-     VALUE
-======================================================= -->
-
-<section id="value">
-
-  <div class="container">
-
-```
-<div class="value-box reveal">
-
-  <div class="section-label">
-    02 — استراتژی و معماری خلق ارزش
-  </div>
-
-  <h3>
-    از «چه می‌خواهیم؟» تا «چطور آن را خلق و اجرا کنیم؟»
-  </h3>
-
-  <p>
-
-    یکی از کاربردهای اصلی این تخصص، کمک به تیم‌های
-    تدوین استراتژی، مدل‌سازی کسب‌وکار و طراحی معماری
-    خلق ارزش است؛ به شکلی که مشخص باشد ارزش برای چه کسی،
-    چگونه، توسط چه اجزایی و تحت چه قواعدی ایجاد و منتقل می‌شود.
-
-    <br><br>
-
-    در این نگاه، قرارداد و حاکمیت حقوقی در انتهای
-    فرآیند قرار نمی‌گیرند؛ بلکه بخشی از طراحی مدل
-    کسب‌وکار و سازوکار خلق ارزش هستند.
-
-  </p>
-
-
-  <div class="value-flow">
-
-    <div class="value-step">
-
-      <span>01</span>
-
-      <strong>
-        تدوین استراتژی
-      </strong>
+      <a
+        class="footer-email"
+        href="mailto:reeemad@gmail.com"
+      >
+        reeemad@gmail.com
+      </a>
 
     </div>
 
+  </footer>
 
-    <div class="value-step">
 
-      <span>02</span>
+  <!-- =========================================================
+       JAVASCRIPT
+  ========================================================== -->
 
-      <strong>
-        مدل‌سازی کسب‌وکار
-      </strong>
+  <script>
 
-    </div>
+    /*
+      Animated statistics
+    */
 
+    const counters = document.querySelectorAll(".metric-number");
 
-    <div class="value-step">
+    const animateCounter = (counter) => {
 
-      <span>03</span>
+      const target = Number(counter.dataset.target);
 
-      <strong>
-        معماری خلق ارزش
-      </strong>
+      let current = 0;
 
-    </div>
+      const duration = 1200;
 
+      const start = performance.now();
 
-    <div class="value-step">
+      const update = (time) => {
 
-      <span>04</span>
-
-      <strong>
-        حاکمیت و اجرای مدل
-      </strong>
-
-    </div>
-
-  </div>
-
-</div>
-```
-
-  </div>
-
-</section>
-
-<!-- =======================================================
-     SKILLS
-======================================================= -->
-
-<section id="skills">
-
-  <div class="container">
-
-```
-<div class="section-header reveal">
-
-  <div class="section-label">
-    03 — توانمندی‌ها
-  </div>
-
-  <h2>
-    ابزارهایی برای تبدیل تصمیم به ساختار
-  </h2>
-
-  <p>
-    ترکیبی از نگاه فنی، تجاری، قراردادی و مدیریتی
-    برای حل مسائل پیچیده کسب‌وکار.
-  </p>
-
-</div>
-
-
-<div class="skills-grid">
-
-
-  <article class="skill glass-card reveal">
-
-    <div class="skill-number">
-      01
-    </div>
-
-    <h3>
-      راهبری کسب‌وکار
-    </h3>
-
-    <p>
-      کمک به تصمیم‌گیری و طراحی ساختارهای تجاری
-      با درنظرگرفتن هم‌زمان اهداف، ریسک‌ها،
-      ذی‌نفعان و الزامات اجرایی.
-    </p>
-
-  </article>
-
-
-  <article class="skill glass-card reveal">
-
-    <div class="skill-number">
-      02
-    </div>
-
-    <h3>
-      حاکمیت حقوقی
-    </h3>
-
-    <p>
-      تبدیل الزامات حقوقی و قراردادی به بخشی
-      از سازوکار راهبری، تصمیم‌گیری و کنترل ریسک.
-    </p>
-
-  </article>
-
-
-  <article class="skill glass-card reveal">
-
-    <div class="skill-number">
-      03
-    </div>
-
-    <h3>
-      قرارداد و مذاکره
-    </h3>
-
-    <p>
-      طراحی، بررسی و مذاکره قراردادهای تجاری
-      با نگاه حقوقی و مدیریت چرخه عمر قرارداد.
-    </p>
-
-  </article>
-
-
-  <article class="skill glass-card reveal">
-
-    <div class="skill-number">
-      04
-    </div>
-
-    <h3>
-      استراتژی و مدل‌سازی
-    </h3>
-
-    <p>
-      تحلیل بازار، مدل‌سازی کسب‌وکار، طراحی
-      ارزش پیشنهادی و تبدیل ایده به ساختار قابل اجرا.
-    </p>
-
-  </article>
-
-
-  <article class="skill glass-card reveal">
-
-    <div class="skill-number">
-      05
-    </div>
-
-    <h3>
-      معماری خلق ارزش
-    </h3>
-
-    <p>
-      شناسایی اجزای لازم برای خلق، انتقال و دریافت
-      ارزش و طراحی روابط میان ذی‌نفعان.
-    </p>
-
-  </article>
-
-
-  <article class="skill glass-card reveal">
-
-    <div class="skill-number">
-      06
-    </div>
-
-    <h3>
-      مدیریت ریسک
-    </h3>
-
-    <p>
-      شناسایی ریسک‌های حقوقی، قراردادی، تجاری
-      و عملیاتی و طراحی سازوکارهای مدیریت آن‌ها.
-    </p>
-
-  </article>
-
-
-  <article class="skill glass-card reveal">
-
-    <div class="skill-number">
-      07
-    </div>
-
-    <h3>
-      RFP و تأمین‌کنندگان
-    </h3>
-
-    <p>
-      مدیریت فرآیندهای مناقصه و RFP،
-      ارزیابی تأمین‌کنندگان و چارچوب همکاری تجاری.
-    </p>
-
-  </article>
-
-
-  <article class="skill glass-card reveal">
-
-    <div class="skill-number">
-      08
-    </div>
-
-    <h3>
-      مدیریت پروژه
-    </h3>
-
-    <p>
-      حرکت از ایده و نیازمندی تا اجرا با استفاده
-      از Agile، Scrum و اصول مدیریت پروژه.
-    </p>
-
-  </article>
-
-
-  <article class="skill glass-card reveal">
-
-    <div class="skill-number">
-      09
-    </div>
-
-    <h3>
-      اتصال فنی و تجاری
-    </h3>
-
-    <p>
-      ایجاد ارتباط میان تیم‌های فنی، حقوقی،
-      مالی، فروش و مدیریت برای رسیدن به یک مسیر مشترک.
-    </p>
-
-  </article>
-
-</div>
-```
-
-  </div>
-
-</section>
-
-<!-- =======================================================
-     JOURNEY
-======================================================= -->
-
-<section id="journey">
-
-  <div class="container">
-
-```
-<div class="section-header reveal">
-
-  <div class="section-label">
-    04 — مسیر حرفه‌ای
-  </div>
-
-  <h2>
-    تجربه در چند محیط، با یک نقطه مشترک
-  </h2>
-
-  <p>
-    حل مسئله، مدیریت ریسک و ایجاد ارتباط میان
-    تکنولوژی، عملیات و کسب‌وکار.
-  </p>
-
-</div>
-
-
-<div class="timeline">
-
-
-  <div class="timeline-item reveal">
-
-    <h3>
-      مهندسی و عملیات بین‌المللی
-    </h3>
-
-    <p>
-      فعالیت در محیط‌های فنی و عملیاتی پیچیده،
-      نگهداری و عیب‌یابی سیستم‌های الکتریکی،
-      ارتباطی و ناوبری و همکاری با نهادهای نظارتی
-      و بازرسی.
-    </p>
-
-  </div>
-
-
-  <div class="timeline-item reveal">
-
-    <h3>
-      توسعه کسب‌وکار و خدمات دیجیتال
-    </h3>
-
-    <p>
-      توسعه خدمات دیجیتال، ایجاد همکاری‌های تجاری،
-      تحلیل بازار و رقبا و تبدیل نیازهای کسب‌وکار
-      به الزامات قابل اجرا برای تیم‌های فنی.
-    </p>
-
-  </div>
-
-
-  <div class="timeline-item reveal">
-
-    <h3>
-      قرارداد و عملیات تجاری
-    </h3>
-
-    <p>
-      مدیریت چرخه عمر قراردادهای تجاری،
-      مذاکره، مدیریت مناقصه و RFP،
-      ارزیابی ریسک و همکاری با تیم‌های حقوقی،
-      فنی، مالی و مدیریتی.
-    </p>
-
-  </div>
-
-
-  <div class="timeline-item reveal">
-
-    <h3>
-      نقطه اتصال امروز
-    </h3>
-
-    <p>
-      ترکیب تجربه فنی، تجاری و قراردادی برای
-      راهبری و توسعه کسب‌وکار با حاکمیت حقوقی؛
-      با تمرکز بر استراتژی، مدل‌سازی و معماری خلق ارزش.
-    </p>
-
-  </div>
-
-</div>
-```
-
-  </div>
-
-</section>
-
-<!-- =======================================================
-     CONTACT
-======================================================= -->
-
-<section id="contact">
-
-  <div class="container">
-
-```
-<div class="cta reveal">
-
-  <div class="section-label">
-    05 — ارتباط
-  </div>
-
-  <h2>
-
-    تا حالا در صنایعی که مشغول به کار بوده‌اید،
-    با شخصی مثل من آشنا شده‌اید؟
-
-  </h2>
-
-
-  <div class="question">
-
-    اگر پاسخ شما «نه» است، شاید وقت آن رسیده باشد
-    یک گفت‌وگوی متفاوت درباره کسب‌وکار و حاکمیت حقوقی
-    در جهت خلق ارزش داشته باشیم.
-
-  </div>
-
-
-  <p>
-
-    اگر فکر می‌کنید ترکیب تجربه فنی، تجاری و حقوقی
-    می‌تواند برای شما یا کسب‌وکارتان مفید باشد،
-    برای مشاهده نمونه‌کار یا مشاوره می‌توانید
-    با من تماس بگیرید.
-
-  </p>
-
-
-  <div class="buttons">
-
-    <!-- IMPORTANT:
-         mailto: is required for email button to work.
-    -->
-
-    <a
-      href="mailto:reeemad@gmail.com"
-      class="btn btn-primary"
-    >
-      تماس با عماد
-    </a>
-
-
-    <a
-      href="https://www.linkedin.com/in/emad-r-428a55282/"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="btn btn-secondary"
-    >
-      LinkedIn
-    </a>
-
-  </div>
-
-
-  <div class="email">
-
-    <a href="mailto:reeemad@gmail.com">
-      reeemad@gmail.com
-    </a>
-
-  </div>
-
-</div>
-```
-
-  </div>
-
-</section>
-
-</main>
-
-<!-- =======================================================
-     FOOTER
-======================================================= -->
-
-<footer>
-
-  <div class="container">
-
-```
-© 2026 عماد —
-راهبری و توسعه کسب‌وکار با حاکمیت حقوقی
-
-<br>
-
-<a
-  href="mailto:reeemad@gmail.com"
-  class="footer-email"
->
-  reeemad@gmail.com
-</a>
-```
-
-  </div>
-
-</footer>
-
-<!-- =======================================================
-     JAVASCRIPT
-======================================================= -->
-
-<script>
-
-/* =========================================================
-   SCROLL REVEAL
-========================================================= */
-
-const revealElements =
-  document.querySelectorAll(".reveal");
-
-const revealObserver =
-  new IntersectionObserver(
-    (entries) => {
-
-      entries.forEach((entry) => {
-
-        if (entry.isIntersecting) {
-
-          entry.target.classList.add("visible");
-
-          revealObserver.unobserve(entry.target);
-
-        }
-
-      });
-
-    },
-    {
-      threshold: 0.12
-    }
-  );
-
-
-revealElements.forEach((element) => {
-  revealObserver.observe(element);
-});
-
-
-/* =========================================================
-   ANIMATED STATISTICS
-========================================================= */
-
-const stats =
-  document.querySelectorAll(".stat-number");
-
-let statsAnimated = false;
-
-
-function animateStats() {
-
-  if (statsAnimated) return;
-
-  statsAnimated = true;
-
-  stats.forEach((stat) => {
-
-    const target =
-      Number(stat.dataset.target);
-
-    const suffix =
-      stat.dataset.suffix || "";
-
-    let current = 0;
-
-    const duration = 1300;
-
-    const start =
-      performance.now();
-
-
-    function update(time) {
-
-      const progress =
-        Math.min(
+        const progress = Math.min(
           (time - start) / duration,
           1
         );
 
-      const eased =
-        1 - Math.pow(1 - progress, 3);
+        const eased =
+          1 - Math.pow(1 - progress, 3);
 
-      current =
-        Math.floor(target * eased);
+        current = Math.floor(target * eased);
 
-      stat.textContent =
-        current + suffix;
+        counter.textContent = current;
 
-
-      if (progress < 1) {
-
-        requestAnimationFrame(update);
-
-      } else {
-
-        stat.textContent =
-          target + suffix;
-
-      }
-
-    }
-
-    requestAnimationFrame(update);
-
-  });
-
-}
-
-
-/* =========================================================
-   START STATS WHEN VISIBLE
-========================================================= */
-
-const statsContainer =
-  document.querySelector(".stats");
-
-
-const statsObserver =
-  new IntersectionObserver(
-    (entries) => {
-
-      entries.forEach((entry) => {
-
-        if (entry.isIntersecting) {
-
-          animateStats();
-
-          statsObserver.unobserve(
-            entry.target
-          );
-
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        } else {
+          counter.textContent = target;
         }
+      };
 
-      });
-
-    },
-    {
-      threshold: .35
-    }
-  );
+      requestAnimationFrame(update);
+    };
 
 
-statsObserver.observe(statsContainer);
+    /*
+      Start counters when metrics enter viewport
+    */
 
+    const metricsSection =
+      document.querySelector(".metrics");
 
-/* =========================================================
-   ACTIVE NAVIGATION
-========================================================= */
+    if (metricsSection) {
 
-const sections =
-  document.querySelectorAll("main section[id]");
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
 
-const navLinks =
-  document.querySelectorAll(".nav-links a");
+          entries.forEach(entry => {
 
+            if (entry.isIntersecting) {
 
-const sectionObserver =
-  new IntersectionObserver(
-    (entries) => {
+              counters.forEach(animateCounter);
 
-      entries.forEach((entry) => {
-
-        if (entry.isIntersecting) {
-
-          navLinks.forEach((link) => {
-
-            link.style.color = "";
+              observer.disconnect();
+            }
 
           });
 
+        },
+        {
+          threshold: .35
+        }
+      );
 
-          const active =
-            document.querySelector(
-              `.nav-links a[href="#${entry.target.id}"]`
-            );
+      observer.observe(metricsSection);
+    }
 
 
-          if (active) {
+    /*
+      Smooth navigation enhancement
+    */
 
-            active.style.color =
-              "var(--teal)";
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
 
-          }
+      link.addEventListener("click", function(event) {
+
+        const targetId =
+          this.getAttribute("href");
+
+        if (targetId === "#") {
+          return;
+        }
+
+        const target =
+          document.querySelector(targetId);
+
+        if (target) {
+
+          event.preventDefault();
+
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
 
         }
 
       });
 
-    },
-    {
-      rootMargin: "-30% 0px -60% 0px"
-    }
-  );
+    });
 
-
-sections.forEach((section) => {
-
-  sectionObserver.observe(section);
-
-});
-
-</script>
+  </script>
 
 </body>
 </html>
+```
