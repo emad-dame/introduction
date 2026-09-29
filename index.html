@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
@@ -6,10 +7,11 @@
 
   <title>عماد | راهبری و توسعه کسب‌وکار با حاکمیت حقوقی</title>
 
-  <meta
-    name="description"
-    content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمیت حقوقی، از تدوین استراتژی و مدل‌سازی کسب‌وکار تا معماری خلق ارزش و اجرای ساختارهای تجاری."
-  >
+<meta
+name="description"
+content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمیت حقوقی، از تدوین استراتژی و مدل‌سازی کسب‌وکار تا معماری خلق ارزش و اجرای ساختارهای تجاری."
+
+>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -664,6 +666,30 @@
     }
 
     /* =========================
+       EMAIL
+    ========================= */
+
+    .email {
+      margin-top: 18px !important;
+
+      color: var(--muted);
+
+      direction: ltr;
+
+      text-align: center;
+    }
+
+    .email a {
+      color: var(--muted);
+
+      transition: color .2s ease;
+    }
+
+    .email a:hover {
+      color: var(--accent);
+    }
+
+    /* =========================
        FOOTER
     ========================= */
 
@@ -677,6 +703,20 @@
       text-align: center;
 
       font-size: .82rem;
+    }
+
+    footer .footer-email {
+      display: inline-block;
+
+      margin-top: 8px;
+
+      direction: ltr;
+
+      transition: color .2s ease;
+    }
+
+    footer .footer-email:hover {
+      color: var(--accent);
     }
 
     /* =========================
@@ -752,8 +792,8 @@
     }
 
   </style>
-</head>
 
+</head>
 
 <body>
 
@@ -763,50 +803,51 @@
 
   <nav>
 
-    <div class="container nav-inner">
+```
+<div class="container nav-inner">
 
-      <a href="#" class="logo">
-        عماد
+  <a href="#" class="logo">
+    عماد
+  </a>
+
+  <ul class="nav-links">
+
+    <li>
+      <a href="#identity">
+        هویت حرفه‌ای
       </a>
+    </li>
 
-      <ul class="nav-links">
+    <li>
+      <a href="#value">
+        خلق ارزش
+      </a>
+    </li>
 
-        <li>
-          <a href="#identity">
-            هویت حرفه‌ای
-          </a>
-        </li>
+    <li>
+      <a href="#skills">
+        توانمندی‌ها
+      </a>
+    </li>
 
-        <li>
-          <a href="#value">
-            خلق ارزش
-          </a>
-        </li>
+    <li>
+      <a href="#journey">
+        مسیر حرفه‌ای
+      </a>
+    </li>
 
-        <li>
-          <a href="#skills">
-            توانمندی‌ها
-          </a>
-        </li>
+    <li>
+      <a href="#contact">
+        ارتباط
+      </a>
+    </li>
 
-        <li>
-          <a href="#journey">
-            مسیر حرفه‌ای
-          </a>
-        </li>
+  </ul>
 
-        <li>
-          <a href="#contact">
-            ارتباط
-          </a>
-        </li>
-
-      </ul>
-
-    </div>
+</div>
+```
 
   </nav>
-
 
   <!-- =========================
        HERO
@@ -814,703 +855,115 @@
 
   <main>
 
-    <section class="hero">
+```
+<section class="hero">
 
-      <div class="container hero-grid">
+  <div class="container hero-grid">
 
-        <div>
+    <div>
 
-          <span class="eyebrow">
-            Business Leadership • Legal Governance
-          </span>
+      <span class="eyebrow">
+        Business Leadership • Legal Governance
+      </span>
 
-          <h1>
-            عماد
-          </h1>
+      <h1>
+        عماد
+      </h1>
 
-          <div class="hero-title">
+      <div class="hero-title">
 
-            <strong>
-              راهبری و توسعه کسب‌وکار
-            </strong>
+        <strong>
+          راهبری و توسعه کسب‌وکار
+        </strong>
 
-            با حاکمیت حقوقی؛
+        با حاکمیت حقوقی؛
 
-            از استراتژی و مدل‌سازی تا معماری خلق ارزش.
-
-          </div>
-
-          <p class="hero-description">
-
-            تجربه من در مهندسی، تکنولوژی، توسعه کسب‌وکار، مدیریت حقوقی،
-            قراردادهای تجاری و مدیریت ریسک شکل گرفته است.
-            این تجربه را برای ایجاد ارتباط میان استراتژی،
-            ساختار کسب‌وکار، الزامات حقوقی و اجرای عملی
-            به کار می‌گیرم.
-
-          </p>
-
-          <div class="buttons">
-
-            <a
-              href="#contact"
-              class="btn btn-primary"
-            >
-              شروع یک گفتگو
-            </a>
-
-            <a
-              href="#value"
-              class="btn btn-secondary"
-            >
-              چگونه خلق ارزش می‌کنم؟
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <!-- PROFILE -->
-
-        <div class="profile-wrapper">
-
-          <div class="profile">
-
-            <!--
-              عکس خودت را اینجا قرار بده:
-
-              <img
-                src="profile.jpg"
-                alt="عماد"
-                class="profile-image"
-              >
-            -->
-
-            <div class="profile-placeholder">
-
-              <div class="symbol">
-                ◈
-              </div>
-
-              <strong>
-                جای عکس پروفایل
-              </strong>
-
-              <span>
-                تصویر عماد
-              </span>
-
-            </div>
-
-          </div>
-
-        </div>
+        از استراتژی و مدل‌سازی تا معماری خلق ارزش.
 
       </div>
 
-    </section>
+      <p class="hero-description">
 
+        تجربه من در مهندسی، تکنولوژی، توسعه کسب‌وکار، مدیریت حقوقی،
+        قراردادهای تجاری و مدیریت ریسک شکل گرفته است.
+        این تجربه را برای ایجاد ارتباط میان استراتژی،
+        ساختار کسب‌وکار، الزامات حقوقی و اجرای عملی
+        به کار می‌گیرم.
 
-    <!-- =========================
-         CORE IDENTITY
-    ========================= -->
+      </p>
 
-    <section id="identity">
+      <div class="buttons">
 
-      <div class="container">
+        <a
+          href="#contact"
+          class="btn btn-primary"
+        >
+          شروع یک گفتگو
+        </a>
 
-        <div class="section-header">
-
-          <div class="section-label">
-            01 — هویت حرفه‌ای
-          </div>
-
-          <h2>
-            فراتر از مدیریت امور حقوقی و قرارداد
-          </h2>
-
-          <p>
-            نقطه تمرکز من جایی است که تصمیم‌های کسب‌وکار
-            باید به ساختار، توافق، مسئولیت و سازوکار اجرایی
-            تبدیل شوند.
-          </p>
-
-        </div>
-
-
-        <div class="identity">
-
-          <div class="identity-card main">
-
-            <h3>
-              راهبری و توسعه کسب‌وکار با حاکمیت حقوقی
-            </h3>
-
-            <p>
-
-              حاکمیت حقوقی برای من صرفاً بررسی قرارداد پس از
-              تصمیم‌گیری نیست؛ بلکه بخشی از معماری تصمیم‌گیری
-              و راهبری کسب‌وکار است.
-
-              <br><br>
-
-              هدف، ایجاد ساختاری است که در آن منافع تجاری،
-              ریسک، تعهدات، مسئولیت‌ها و قابلیت اجرا از ابتدا
-              در کنار یکدیگر دیده شوند.
-
-            </p>
-
-          </div>
-
-
-          <div class="identity-card">
-
-            <h3>
-              اتصال استراتژی به اجرا
-            </h3>
-
-            <p>
-
-              تجربه در محیط‌های فنی، عملیاتی و تجاری به من
-              امکان داده است میان زبان مدیران، تیم‌های فنی،
-              حقوقی، مالی و فروش ارتباط برقرار کنم.
-
-              <br><br>
-
-              نتیجه این نگاه، تبدیل ایده و استراتژی به
-              مدل‌های قابل فهم، توافق‌های روشن و ساختارهای
-              قابل اجراست.
-
-            </p>
-
-          </div>
-
-        </div>
+        <a
+          href="#value"
+          class="btn btn-secondary"
+        >
+          چگونه خلق ارزش می‌کنم؟
+        </a>
 
       </div>
-
-    </section>
-
-
-    <!-- =========================
-         VALUE ARCHITECTURE
-    ========================= -->
-
-    <section id="value" class="value-section">
-
-      <div class="container">
-
-        <div class="value-box">
-
-          <div class="section-label">
-            02 — استراتژی و معماری خلق ارزش
-          </div>
-
-          <h3>
-            از «چه می‌خواهیم؟» تا «چطور آن را خلق و اجرا کنیم؟»
-          </h3>
-
-          <p>
-
-            یکی از کاربردهای اصلی این تخصص، کمک به تیم های تدوین
-            استراتژی، مدل‌سازی کسب‌وکار و طراحی معماری خلق ارزش
-            است؛ به شکلی که مشخص باشد ارزش برای چه کسی،
-            چگونه، توسط چه اجزایی و تحت چه قواعدی ایجاد و
-            منتقل می‌شود.
-
-            <br><br>
-
-            در این نگاه، قرارداد و حاکمیت حقوقی در انتهای
-            فرآیند قرار نمی‌گیرند؛ بلکه بخشی از طراحی مدل
-            کسب‌وکار و سازوکار خلق ارزش هستند.
-
-          </p>
-
-
-          <div class="value-flow">
-
-            <div class="value-step">
-
-              <span>
-                01
-              </span>
-
-              <strong>
-                تدوین استراتژی
-              </strong>
-
-            </div>
-
-
-            <div class="value-step">
-
-              <span>
-                02
-              </span>
-
-              <strong>
-                مدل‌سازی کسب‌وکار
-              </strong>
-
-            </div>
-
-
-            <div class="value-step">
-
-              <span>
-                03
-              </span>
-
-              <strong>
-                معماری خلق ارزش
-              </strong>
-
-            </div>
-
-
-            <div class="value-step">
-
-              <span>
-                04
-              </span>
-
-              <strong>
-                حاکمیت و اجرای مدل
-              </strong>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         SKILLS
-    ========================= -->
-
-    <section id="skills">
-
-      <div class="container">
-
-        <div class="section-header">
-
-          <div class="section-label">
-            03 — توانمندی‌ها
-          </div>
-
-          <h2>
-            ابزارهایی برای تبدیل تصمیم به ساختار
-          </h2>
-
-        </div>
-
-
-        <div class="skills-grid">
-
-
-          <article class="skill">
-
-            <div class="skill-number">
-              01
-            </div>
-
-            <h3>
-              راهبری کسب‌وکار
-            </h3>
-
-            <p>
-
-              کمک به تصمیم‌گیری و طراحی ساختارهای تجاری
-              با درنظرگرفتن هم‌زمان اهداف، ریسک‌ها،
-              ذی‌نفعان و الزامات اجرایی.
-
-            </p>
-
-          </article>
-
-
-          <article class="skill">
-
-            <div class="skill-number">
-              02
-            </div>
-
-            <h3>
-              حاکمیت حقوقی
-            </h3>
-
-            <p>
-
-              تبدیل الزامات حقوقی و قراردادی به بخشی از
-              سازوکار راهبری، تصمیم‌گیری و کنترل ریسک
-              کسب‌وکار.
-
-            </p>
-
-          </article>
-
-
-          <article class="skill">
-
-            <div class="skill-number">
-              03
-            </div>
-
-            <h3>
-              قرارداد و مذاکره
-            </h3>
-
-            <p>
-
-              طراحی، بررسی و مذاکره قراردادهای تجاری،
-              با نگاه حقوقی و مدیریت چرخه عمر قرارداد
-              از شروع تا اجرا.
-
-            </p>
-
-          </article>
-
-
-          <article class="skill">
-
-            <div class="skill-number">
-              04
-            </div>
-
-            <h3>
-              استراتژی و مدل‌سازی
-            </h3>
-
-            <p>
-
-              تحلیل بازار، مدل‌سازی کسب‌وکار، طراحی ارزش
-              پیشنهادی و تبدیل ایده‌های تجاری به ساختار
-              قابل اجرا.
-
-            </p>
-
-          </article>
-
-
-          <article class="skill">
-
-            <div class="skill-number">
-              05
-            </div>
-
-            <h3>
-              معماری خلق ارزش
-            </h3>
-
-            <p>
-
-              شناسایی اجزای لازم برای خلق، انتقال و دریافت
-              ارزش و طراحی روابط میان ذی‌نفعان، منابع،
-              خدمات و تعهدات.
-
-            </p>
-
-          </article>
-
-
-          <article class="skill">
-
-            <div class="skill-number">
-              06
-            </div>
-
-            <h3>
-              مدیریت ریسک
-            </h3>
-
-            <p>
-
-              شناسایی ریسک‌های حقوقی و قراردادی، تجاری و عملیاتی
-              و طراحی سازوکارهایی برای کاهش و مدیریت
-              آن‌ها.
-
-            </p>
-
-          </article>
-
-
-          <article class="skill">
-
-            <div class="skill-number">
-              07
-            </div>
-
-            <h3>
-              RFP و تأمین‌کنندگان
-            </h3>
-
-            <p>
-
-              مدیریت فرآیندهای مناقصه و RFP، ارزیابی
-              تأمین‌کنندگان و ساخت چارچوب مناسب برای
-              همکاری تجاری.
-
-            </p>
-
-          </article>
-
-
-          <article class="skill">
-
-            <div class="skill-number">
-              08
-            </div>
-
-            <h3>
-              مدیریت پروژه
-            </h3>
-
-            <p>
-
-              حرکت از ایده و نیازمندی تا اجرا با استفاده
-              از Agile، Scrum و اصول مدیریت پروژه.
-
-            </p>
-
-          </article>
-
-
-          <article class="skill">
-
-            <div class="skill-number">
-              09
-            </div>
-
-            <h3>
-              اتصال فنی و تجاری
-            </h3>
-
-            <p>
-
-              ایجاد ارتباط میان تیم‌های فنی، حقوقی،
-              مالی، فروش و مدیریت برای تبدیل نیازهای
-              مختلف به یک مسیر مشترک.
-
-            </p>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         PROFESSIONAL JOURNEY
-    ========================= -->
-
-    <section id="journey">
-
-      <div class="container">
-
-        <div class="section-header">
-
-          <div class="section-label">
-            04 — مسیر حرفه‌ای
-          </div>
-
-          <h2>
-            تجربه در چند محیط، با یک نقطه مشترک
-          </h2>
-
-          <p>
-
-            حل مسئله، مدیریت ریسک و ایجاد ارتباط میان
-            تکنولوژی، عملیات ، کسب‌وکار.،حقوق
-
-          </p>
-
-        </div>
-
-
-        <div class="timeline">
-
-
-          <div class="timeline-item">
-
-            <h3>
-              مهندسی و عملیات بین‌المللی
-            </h3>
-
-            <p>
-
-              فعالیت در محیط‌های فنی و عملیاتی پیچیده،
-              نگهداری و عیب‌یابی سیستم‌های الکتریکی،
-              ارتباطی و ناوبری و همکاری با نهادهای
-              نظارتی و بازرسی.
-
-            </p>
-
-          </div>
-
-
-          <div class="timeline-item">
-
-            <h3>
-              توسعه کسب‌وکار و خدمات دیجیتال
-            </h3>
-
-            <p>
-
-              توسعه خدمات دیجیتال، ایجاد همکاری‌های
-              تجاری، تحلیل بازار و رقبا و تبدیل نیازهای
-              کسب‌وکار به الزامات قابل اجرا برای تیم‌های
-              فنی.
-
-            </p>
-
-          </div>
-
-
-          <div class="timeline-item">
-
-            <h3>
-              قرارداد و عملیات تجاری
-            </h3>
-
-            <p>
-
-              مدیریت چرخه عمر قراردادهای تجاری، مذاکره،
-              مدیریت مناقصه و RFP،
-              ارزیابی ریسک و همکاری با تیم‌های حقوقی،
-              فنی، مالی و مدیریتی.
-
-            </p>
-
-          </div>
-
-
-          <div class="timeline-item">
-
-            <h3>
-              نقطه اتصال امروز
-            </h3>
-
-            <p>
-
-              ترکیب تجربه فنی، تجاری و قراردادی برای
-              راهبری و توسعه کسب‌وکار با حاکمیت حقوقی؛
-              با تمرکز بر استراتژی، مدل‌سازی و معماری
-              خلق ارزش.
-
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         CONTACT
-    ========================= -->
-
-    <section id="contact">
-
-      <div class="container">
-
-        <div class="cta">
-
-          <div class="section-label">
-            05 — ارتباط
-          </div>
-
-          <h2>
-
-            تا حالا در صنایعی که مشغول به کار بوده‌اید،
-            با شخصی مثل من آشنا شده‌اید؟
-
-          </h2>
-
-
-          <div class="question">
-
-            اگر پاسخ شما «نه» است، شاید وقت آن رسیده باشد
-            یک گفت‌وگوی متفاوت درباره کسب‌وکار، و حاکمیت حقوقی
-            در جهت خلق ارزش داشته باشیم.
-
-          </div>
-
-
-          <p>
-
-            اگر فکر می‌کنید ترکیب تجربه فنی، تجاری،
-            و حقوقی می‌تواند برای شما یا
-            کسب‌وکارتان مفید باشد، برای مشاهده نمونه‌کار
-            یا مشاوره می‌توانید با من تماس بگیرید.
-
-          </p>
-
-
-          <div class="buttons">
-
-            <!--
-              ایمیل خودت را اینجا قرار بده
-            -->
-
-            <a
-              href="reeemad@gmail.com"
-              class="btn btn-primary"
-            >
-              تماس با عماد
-            </a>
-
-
-            <!--
-              لینک LinkedIn خودت را اینجا قرار بده
-            -->
-
-            <a
-              href="www.linkedin.com/in/emad-r-428a55282"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-secondary"
-            >
-              LinkedIn
-            </a>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- =========================
-       FOOTER
-  ========================= -->
-
-  <footer>
-
-    <div class="container">
-
-      © 2026 عماد —
-      راهبری و توسعه کسب‌وکار با حاکمیت حقوقی
 
     </div>
 
-  </footer>
+
+    <!-- PROFILE -->
+
+    <div class="profile-wrapper">
+
+      <div class="profile">
+
+        <!--
+          عکس خودت را اینجا قرار بده:
+
+          <img
+            src="profile.jpg"
+            alt="عماد"
+            class="profile-image"
+          >
+        -->
+
+        <div class="profile-placeholder">
+
+          <div class="symbol">
+            ◈
+          </div>
+
+          <strong>
+            جای عکس پروفایل
+          </strong>
+
+          <span>
+            تصویر عماد
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 
-</body>
-</html>
+<!-- =========================
+     CORE IDENTITY
+========================= -->
+
+<section id="identity">
+
+  <div class="container">
+
+    <div class="section-header">
+
+      <div class="section-label">
+        01 — هویت
+```
