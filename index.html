@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="fa" dir="rtl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +62,6 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
           transparent 30%
         ),
         var(--bg);
-
       color: var(--text);
       line-height: 1.9;
       overflow-x: hidden;
@@ -85,17 +85,13 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
       position: sticky;
       top: 0;
       z-index: 1000;
-
       backdrop-filter: blur(18px);
-
       background: rgba(8,12,20,.75);
-
       border-bottom: 1px solid var(--border);
     }
 
     .nav-inner {
       height: 72px;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -109,12 +105,9 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
 
     .nav-links {
       list-style: none;
-
       display: flex;
       gap: 26px;
-
       color: var(--muted);
-
       font-size: .9rem;
     }
 
@@ -132,20 +125,15 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
 
     .hero {
       min-height: calc(100vh - 72px);
-
       display: flex;
       align-items: center;
-
       padding: 80px 0;
     }
 
     .hero-grid {
       display: grid;
-
       grid-template-columns: 1.25fr .75fr;
-
       gap: 80px;
-
       align-items: center;
     }
 
@@ -153,54 +141,36 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
       display: inline-flex;
       align-items: center;
       gap: 8px;
-
       color: var(--accent);
-
       background: rgba(99,230,197,.07);
-
       border: 1px solid rgba(99,230,197,.16);
-
       padding: 6px 14px;
-
       border-radius: 999px;
-
       font-size: .82rem;
-
       margin-bottom: 22px;
     }
 
     .eyebrow::before {
       content: "";
-
       width: 7px;
       height: 7px;
-
       background: var(--accent);
-
       border-radius: 50%;
-
       box-shadow: 0 0 14px var(--accent);
     }
 
     h1 {
       font-size: clamp(3.5rem, 9vw, 7rem);
-
       line-height: .95;
-
       letter-spacing: -4px;
-
       margin-bottom: 28px;
     }
 
     .hero-title {
       font-size: clamp(1.6rem, 3vw, 2.5rem);
-
       line-height: 1.5;
-
       font-weight: 600;
-
       max-width: 750px;
-
       margin-bottom: 22px;
     }
 
@@ -210,34 +180,24 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
 
     .hero-description {
       max-width: 720px;
-
       color: var(--muted);
-
       font-size: 1.05rem;
     }
 
     .buttons {
       display: flex;
-
       gap: 13px;
-
       flex-wrap: wrap;
-
       margin-top: 32px;
     }
 
     .btn {
       display: inline-flex;
-
       align-items: center;
       justify-content: center;
-
       padding: 12px 22px;
-
       border-radius: 12px;
-
       font-weight: 600;
-
       transition:
         transform .2s ease,
         background .2s ease;
@@ -249,13 +209,11 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
 
     .btn-primary {
       background: var(--accent);
-
       color: #06100d;
     }
 
     .btn-secondary {
       border: 1px solid var(--border);
-
       background: rgba(255,255,255,.03);
     }
 
@@ -265,17 +223,13 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
 
     .profile-wrapper {
       display: flex;
-
       justify-content: center;
     }
 
     .profile {
       width: min(340px, 75vw);
-
       aspect-ratio: 1;
-
       border-radius: 32px;
-
       border: 1px solid var(--border);
 
       background:
@@ -287,66 +241,36 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
         #101725;
 
       display: flex;
-
       align-items: center;
       justify-content: center;
-
       overflow: hidden;
 
       box-shadow:
         0 30px 90px rgba(0,0,0,.4);
     }
 
-    /*
-      ================================
-      جای عکس پروفایل
-
-      بعداً یک فایل با نام:
-
-      profile.jpg
-
-      کنار index.html قرار بده.
-
-      سپس محتوای profile را با این کد جایگزین کن:
-
-      <img
-        src="profile.jpg"
-        alt="عماد"
-        class="profile-image"
-      >
-      ================================
-    */
-
     .profile-placeholder {
       text-align: center;
-
       color: var(--muted);
-
       padding: 30px;
     }
 
     .profile-placeholder .symbol {
       font-size: 4rem;
-
       color: var(--accent);
-
       margin-bottom: 10px;
     }
 
     .profile-placeholder strong {
       display: block;
-
       color: var(--text);
-
       margin-bottom: 5px;
     }
 
     .profile-image {
       width: 100%;
       height: 100%;
-
       object-fit: cover;
-
       display: block;
     }
 
@@ -360,27 +284,20 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
 
     .section-header {
       max-width: 760px;
-
       margin-bottom: 45px;
     }
 
     .section-label {
       color: var(--accent);
-
       font-size: .82rem;
-
       font-weight: 700;
-
       margin-bottom: 10px;
-
       letter-spacing: .5px;
     }
 
     h2 {
       font-size: clamp(2rem, 4vw, 3.2rem);
-
       line-height: 1.35;
-
       margin-bottom: 16px;
     }
 
@@ -394,19 +311,14 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
 
     .identity {
       display: grid;
-
       grid-template-columns: 1fr 1fr;
-
       gap: 22px;
     }
 
     .identity-card {
       padding: 35px;
-
       border: 1px solid var(--border);
-
       border-radius: var(--radius);
-
       background: var(--card);
     }
 
@@ -417,13 +329,11 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
           rgba(99,230,197,.09),
           rgba(110,168,254,.04)
         );
-
       border-color: rgba(99,230,197,.2);
     }
 
     .identity-card h3 {
       font-size: 1.5rem;
-
       margin-bottom: 15px;
     }
 
@@ -435,16 +345,13 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
        VALUE ARCHITECTURE
     ========================= */
 
-    <section id="value">
     .value-section {
       position: relative;
     }
 
     .value-box {
       border-radius: 30px;
-
       padding: 55px;
-
       border: 1px solid rgba(99,230,197,.16);
 
       background:
@@ -458,47 +365,34 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
 
     .value-box h3 {
       font-size: clamp(1.8rem, 3vw, 2.5rem);
-
       margin-bottom: 18px;
     }
 
     .value-box > p {
       color: var(--muted);
-
       max-width: 850px;
-
       margin-bottom: 40px;
     }
 
     .value-flow {
       display: grid;
-
       grid-template-columns: repeat(4, 1fr);
-
       gap: 12px;
     }
 
     .value-step {
       padding: 22px;
-
       border-radius: 16px;
-
       background: rgba(255,255,255,.045);
-
       border: 1px solid var(--border);
-
       text-align: center;
     }
 
     .value-step span {
       display: block;
-
       color: var(--accent);
-
       font-size: .75rem;
-
       font-weight: 700;
-
       margin-bottom: 8px;
     }
 
@@ -510,22 +404,16 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
        SKILLS
     ========================= */
 
-    <section id="skills">
     .skills-grid {
       display: grid;
-
       grid-template-columns: repeat(3, 1fr);
-
       gap: 18px;
     }
 
     .skill {
       padding: 28px;
-
       border: 1px solid var(--border);
-
       border-radius: var(--radius);
-
       background: var(--card);
 
       transition:
@@ -535,29 +423,23 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
 
     .skill:hover {
       transform: translateY(-5px);
-
       background: var(--card-hover);
     }
 
     .skill-number {
       color: var(--accent);
-
       font-size: .78rem;
-
       font-weight: 700;
-
       margin-bottom: 15px;
     }
 
     .skill h3 {
       font-size: 1.1rem;
-
       margin-bottom: 10px;
     }
 
     .skill p {
       color: var(--muted);
-
       font-size: .9rem;
     }
 
@@ -565,14 +447,10 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
        JOURNEY
     ========================= */
 
-    <section id="joueney">
     .timeline {
       border-right: 2px solid rgba(99,230,197,.2);
-
       padding-right: 28px;
-
       display: grid;
-
       gap: 35px;
     }
 
@@ -582,18 +460,12 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
 
     .timeline-item::before {
       content: "";
-
       position: absolute;
-
       right: -37px;
-
       top: 8px;
-
       width: 14px;
       height: 14px;
-
       border-radius: 50%;
-
       background: var(--accent);
 
       box-shadow:
@@ -602,13 +474,11 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
 
     .timeline-item h3 {
       font-size: 1.15rem;
-
       margin-bottom: 7px;
     }
 
     .timeline-item p {
       color: var(--muted);
-
       font-size: .92rem;
     }
 
@@ -616,12 +486,9 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
        CONTACT
     ========================= */
 
-    <section id="contact">
     .cta {
       padding: 65px 40px;
-
       border-radius: 32px;
-
       border: 1px solid rgba(99,230,197,.18);
 
       background:
@@ -637,31 +504,23 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
 
     .cta h2 {
       max-width: 850px;
-
       margin: 0 auto 20px;
     }
 
     .question {
       max-width: 850px;
-
       margin: 30px auto;
-
       padding: 22px;
 
       border-right: 3px solid var(--accent);
-
       border-radius: 12px;
-
       background: rgba(255,255,255,.04);
-
       font-size: 1.05rem;
     }
 
     .cta p {
       max-width: 720px;
-
       margin: auto;
-
       color: var(--muted);
     }
 
@@ -669,23 +528,15 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
       justify-content: center;
     }
 
-    /* =========================
-       EMAIL
-    ========================= */
-
     .email {
       margin-top: 18px !important;
-
       color: var(--muted);
-
       direction: ltr;
-
       text-align: center;
     }
 
     .email a {
       color: var(--muted);
-
       transition: color .2s ease;
     }
 
@@ -699,23 +550,16 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
 
     footer {
       padding: 35px 0;
-
       border-top: 1px solid var(--border);
-
       color: var(--muted);
-
       text-align: center;
-
       font-size: .82rem;
     }
 
     footer .footer-email {
       display: inline-block;
-
       margin-top: 8px;
-
       direction: ltr;
-
       transition: color .2s ease;
     }
 
@@ -731,7 +575,6 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
 
       .hero-grid {
         grid-template-columns: 1fr;
-
         text-align: center;
       }
 
@@ -817,33 +660,23 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
   <ul class="nav-links">
 
     <li>
-      <a href="#identity">
-        هویت حرفه‌ای
-      </a>
+      <a href="#identity">هویت حرفه‌ای</a>
     </li>
 
     <li>
-      <a href="#value">
-        خلق ارزش
-      </a>
+      <a href="#value">خلق ارزش</a>
     </li>
 
     <li>
-      <a href="#skills">
-        توانمندی‌ها
-      </a>
+      <a href="#skills">توانمندی‌ها</a>
     </li>
 
     <li>
-      <a href="#journey">
-        مسیر حرفه‌ای
-      </a>
+      <a href="#journey">مسیر حرفه‌ای</a>
     </li>
 
     <li>
-      <a href="#contact">
-        ارتباط
-      </a>
+      <a href="#contact">ارتباط</a>
     </li>
 
   </ul>
@@ -853,13 +686,13 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
 
   </nav>
 
-  <!-- =========================
-       HERO
-  ========================= -->
-
   <main>
 
 ```
+<!-- =========================
+     HERO
+========================= -->
+
 <section class="hero">
 
   <div class="container hero-grid">
@@ -870,15 +703,11 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
         Business Leadership • Legal Governance
       </span>
 
-      <h1>
-        عماد
-      </h1>
+      <h1>عماد</h1>
 
       <div class="hero-title">
 
-        <strong>
-          راهبری و توسعه کسب‌وکار
-        </strong>
+        <strong>راهبری و توسعه کسب‌وکار</strong>
 
         با حاکمیت حقوقی؛
 
@@ -888,8 +717,9 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
 
       <p class="hero-description">
 
-        تجربه من در مهندسی، تکنولوژی، توسعه کسب‌وکار، مدیریت حقوقی،
-        قراردادهای تجاری و مدیریت ریسک شکل گرفته است.
+        تجربه من در مهندسی، تکنولوژی، توسعه کسب‌وکار،
+        مدیریت حقوقی، قراردادهای تجاری و مدیریت ریسک
+        شکل گرفته است.
         این تجربه را برای ایجاد ارتباط میان استراتژی،
         ساختار کسب‌وکار، الزامات حقوقی و اجرای عملی
         به کار می‌گیرم.
@@ -898,17 +728,11 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
 
       <div class="buttons">
 
-        <a
-          href="#contact"
-          class="btn btn-primary"
-        >
+        <a href="#contact" class="btn btn-primary">
           شروع یک گفتگو
         </a>
 
-        <a
-          href="#value"
-          class="btn btn-secondary"
-        >
+        <a href="#value" class="btn btn-secondary">
           چگونه خلق ارزش می‌کنم؟
         </a>
 
@@ -916,36 +740,17 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
 
     </div>
 
-
-    <!-- PROFILE -->
-
     <div class="profile-wrapper">
 
       <div class="profile">
 
-        <!--
-          عکس خودت را اینجا قرار بده:
-
-          <img
-            src="profile.jpg"
-            alt="عماد"
-            class="profile-image"
-          >
-        -->
-
         <div class="profile-placeholder">
 
-          <div class="symbol">
-            ◈
-          </div>
+          <div class="symbol">◈</div>
 
-          <strong>
-            جای عکس پروفایل
-          </strong>
+          <strong>جای عکس پروفایل</strong>
 
-          <span>
-            تصویر عماد
-          </span>
+          <span>تصویر عماد</span>
 
         </div>
 
@@ -969,5 +774,484 @@ content="عماد؛ راهبری و توسعه کسب‌وکار با حاکمی
     <div class="section-header">
 
       <div class="section-label">
-        01 — هویت
+        01 — هویت حرفه‌ای
+      </div>
+
+      <h2>
+        فراتر از مدیریت امور حقوقی و قرارداد
+      </h2>
+
+      <p>
+        نقطه تمرکز من جایی است که تصمیم‌های کسب‌وکار
+        باید به ساختار، توافق، مسئولیت و سازوکار اجرایی
+        تبدیل شوند.
+      </p>
+
+    </div>
+
+    <div class="identity">
+
+      <div class="identity-card main">
+
+        <h3>
+          راهبری و توسعه کسب‌وکار با حاکمیت حقوقی
+        </h3>
+
+        <p>
+
+          حاکمیت حقوقی برای من صرفاً بررسی قرارداد پس از
+          تصمیم‌گیری نیست؛ بلکه بخشی از معماری تصمیم‌گیری
+          و راهبری کسب‌وکار است.
+
+          <br><br>
+
+          هدف، ایجاد ساختاری است که در آن منافع تجاری،
+          ریسک، تعهدات، مسئولیت‌ها و قابلیت اجرا از ابتدا
+          در کنار یکدیگر دیده شوند.
+
+        </p>
+
+      </div>
+
+      <div class="identity-card">
+
+        <h3>
+          اتصال استراتژی به اجرا
+        </h3>
+
+        <p>
+
+          تجربه در محیط‌های فنی، عملیاتی و تجاری به من
+          امکان داده است میان زبان مدیران، تیم‌های فنی،
+          حقوقی، مالی و فروش ارتباط برقرار کنم.
+
+          <br><br>
+
+          نتیجه این نگاه، تبدیل ایده و استراتژی به
+          مدل‌های قابل فهم، توافق‌های روشن و ساختارهای
+          قابل اجراست.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     VALUE ARCHITECTURE
+========================= -->
+
+<section id="value" class="value-section">
+
+  <div class="container">
+
+    <div class="value-box">
+
+      <div class="section-label">
+        02 — استراتژی و معماری خلق ارزش
+      </div>
+
+      <h3>
+        از «چه می‌خواهیم؟» تا «چطور آن را خلق و اجرا کنیم؟»
+      </h3>
+
+      <p>
+
+        یکی از کاربردهای اصلی این تخصص، کمک به تیم‌های تدوین
+        استراتژی، مدل‌سازی کسب‌وکار و طراحی معماری خلق ارزش
+        است؛ به شکلی که مشخص باشد ارزش برای چه کسی،
+        چگونه، توسط چه اجزایی و تحت چه قواعدی ایجاد و
+        منتقل می‌شود.
+
+        <br><br>
+
+        در این نگاه، قرارداد و حاکمیت حقوقی در انتهای
+        فرآیند قرار نمی‌گیرند؛ بلکه بخشی از طراحی مدل
+        کسب‌وکار و سازوکار خلق ارزش هستند.
+
+      </p>
+
+      <div class="value-flow">
+
+        <div class="value-step">
+          <span>01</span>
+          <strong>تدوین استراتژی</strong>
+        </div>
+
+        <div class="value-step">
+          <span>02</span>
+          <strong>مدل‌سازی کسب‌وکار</strong>
+        </div>
+
+        <div class="value-step">
+          <span>03</span>
+          <strong>معماری خلق ارزش</strong>
+        </div>
+
+        <div class="value-step">
+          <span>04</span>
+          <strong>حاکمیت و اجرای مدل</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section id="skills">
+
+  <div class="container">
+
+    <div class="section-header">
+
+      <div class="section-label">
+        03 — توانمندی‌ها
+      </div>
+
+      <h2>
+        ابزارهایی برای تبدیل تصمیم به ساختار
+      </h2>
+
+    </div>
+
+    <div class="skills-grid">
+
+      <article class="skill">
+
+        <div class="skill-number">01</div>
+
+        <h3>راهبری کسب‌وکار</h3>
+
+        <p>
+          کمک به تصمیم‌گیری و طراحی ساختارهای تجاری
+          با درنظرگرفتن هم‌زمان اهداف، ریسک‌ها،
+          ذی‌نفعان و الزامات اجرایی.
+        </p>
+
+      </article>
+
+      <article class="skill">
+
+        <div class="skill-number">02</div>
+
+        <h3>حاکمیت حقوقی</h3>
+
+        <p>
+          تبدیل الزامات حقوقی و قراردادی به بخشی از
+          سازوکار راهبری، تصمیم‌گیری و کنترل ریسک
+          کسب‌وکار.
+        </p>
+
+      </article>
+
+      <article class="skill">
+
+        <div class="skill-number">03</div>
+
+        <h3>قرارداد و مذاکره</h3>
+
+        <p>
+          طراحی، بررسی و مذاکره قراردادهای تجاری،
+          با نگاه حقوقی و مدیریت چرخه عمر قرارداد
+          از شروع تا اجرا.
+        </p>
+
+      </article>
+
+      <article class="skill">
+
+        <div class="skill-number">04</div>
+
+        <h3>استراتژی و مدل‌سازی</h3>
+
+        <p>
+          تحلیل بازار، مدل‌سازی کسب‌وکار، طراحی ارزش
+          پیشنهادی و تبدیل ایده‌های تجاری به ساختار
+          قابل اجرا.
+        </p>
+
+      </article>
+
+      <article class="skill">
+
+        <div class="skill-number">05</div>
+
+        <h3>معماری خلق ارزش</h3>
+
+        <p>
+          شناسایی اجزای لازم برای خلق، انتقال و دریافت
+          ارزش و طراحی روابط میان ذی‌نفعان، منابع،
+          خدمات و تعهدات.
+        </p>
+
+      </article>
+
+      <article class="skill">
+
+        <div class="skill-number">06</div>
+
+        <h3>مدیریت ریسک</h3>
+
+        <p>
+          شناسایی ریسک‌های حقوقی و قراردادی، تجاری و عملیاتی
+          و طراحی سازوکارهایی برای کاهش و مدیریت
+          آن‌ها.
+        </p>
+
+      </article>
+
+      <article class="skill">
+
+        <div class="skill-number">07</div>
+
+        <h3>RFP و تأمین‌کنندگان</h3>
+
+        <p>
+          مدیریت فرآیندهای مناقصه و RFP، ارزیابی
+          تأمین‌کنندگان و ساخت چارچوب مناسب برای
+          همکاری تجاری.
+        </p>
+
+      </article>
+
+      <article class="skill">
+
+        <div class="skill-number">08</div>
+
+        <h3>مدیریت پروژه</h3>
+
+        <p>
+          حرکت از ایده و نیازمندی تا اجرا با استفاده
+          از Agile، Scrum و اصول مدیریت پروژه.
+        </p>
+
+      </article>
+
+      <article class="skill">
+
+        <div class="skill-number">09</div>
+
+        <h3>اتصال فنی و تجاری</h3>
+
+        <p>
+          ایجاد ارتباط میان تیم‌های فنی، حقوقی،
+          مالی، فروش و مدیریت برای تبدیل نیازهای
+          مختلف به یک مسیر مشترک.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PROFESSIONAL JOURNEY
+========================= -->
+
+<section id="journey">
+
+  <div class="container">
+
+    <div class="section-header">
+
+      <div class="section-label">
+        04 — مسیر حرفه‌ای
+      </div>
+
+      <h2>
+        تجربه در چند محیط، با یک نقطه مشترک
+      </h2>
+
+      <p>
+        حل مسئله، مدیریت ریسک و ایجاد ارتباط میان
+        تکنولوژی، عملیات، کسب‌وکار و حقوق.
+      </p>
+
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+
+        <h3>
+          مهندسی و عملیات بین‌المللی
+        </h3>
+
+        <p>
+          فعالیت در محیط‌های فنی و عملیاتی پیچیده،
+          نگهداری و عیب‌یابی سیستم‌های الکتریکی،
+          ارتباطی و ناوبری و همکاری با نهادهای
+          نظارتی و بازرسی.
+        </p>
+
+      </div>
+
+      <div class="timeline-item">
+
+        <h3>
+          توسعه کسب‌وکار و خدمات دیجیتال
+        </h3>
+
+        <p>
+          توسعه خدمات دیجیتال، ایجاد همکاری‌های
+          تجاری، تحلیل بازار و رقبا و تبدیل نیازهای
+          کسب‌وکار به الزامات قابل اجرا برای تیم‌های
+          فنی.
+        </p>
+
+      </div>
+
+      <div class="timeline-item">
+
+        <h3>
+          قرارداد و عملیات تجاری
+        </h3>
+
+        <p>
+          مدیریت چرخه عمر قراردادهای تجاری، مذاکره،
+          مدیریت مناقصه و RFP، ارزیابی ریسک و همکاری
+          با تیم‌های حقوقی، فنی، مالی و مدیریتی.
+        </p>
+
+      </div>
+
+      <div class="timeline-item">
+
+        <h3>
+          نقطه اتصال امروز
+        </h3>
+
+        <p>
+          ترکیب تجربه فنی، تجاری و قراردادی برای
+          راهبری و توسعه کسب‌وکار با حاکمیت حقوقی؛
+          با تمرکز بر استراتژی، مدل‌سازی و معماری
+          خلق ارزش.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact">
+
+  <div class="container">
+
+    <div class="cta">
+
+      <div class="section-label">
+        05 — ارتباط
+      </div>
+
+      <h2>
+        تا حالا در صنایعی که مشغول به کار بوده‌اید،
+        با شخصی مثل من آشنا شده‌اید؟
+      </h2>
+
+      <div class="question">
+
+        اگر پاسخ شما «نه» است، شاید وقت آن رسیده باشد
+        یک گفت‌وگوی متفاوت درباره کسب‌وکار، و حاکمیت حقوقی
+        در جهت خلق ارزش داشته باشیم.
+
+      </div>
+
+      <p>
+
+        اگر فکر می‌کنید ترکیب تجربه فنی، تجاری،
+        و حقوقی می‌تواند برای شما یا
+        کسب‌وکارتان مفید باشد، برای مشاهده نمونه‌کار
+        یا مشاوره می‌توانید با من تماس بگیرید.
+
+      </p>
+
+      <div class="buttons">
+
+        <a
+          href="mailto:reeemad@gmail.com"
+          class="btn btn-primary"
+        >
+          تماس با عماد
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/emad-r-428a55282"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-secondary"
+        >
+          LinkedIn
+        </a>
+
+      </div>
+
+      <p class="email">
+
+        <a href="mailto:reeemad@gmail.com">
+          reeemad@gmail.com
+        </a>
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
 ```
+
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+```
+<div class="container">
+
+  © 2026 عماد —
+  راهبری و توسعه کسب‌وکار با حاکمیت حقوقی
+
+  <br>
+
+  <a
+    href="mailto:reeemad@gmail.com"
+    class="footer-email"
+  >
+    reeemad@gmail.com
+  </a>
+
+</div>
+```
+
+  </footer>
+
+</body>
+</html>
